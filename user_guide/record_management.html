@@ -1,0 +1,901 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Managing Records &#8212; QCArchive 0.0.99.post3977+g6ebb51a1 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/autodoc_pydantic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=d1dcde36" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script src="../_static/documentation_options.js?v=5bc7dc3f"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/record_management';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Using datasets" href="datasets.html" />
+    <link rel="prev" title="Submitting computations" href="record_submission.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/qcarchive_logo.svg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/qcarchive_logo_inverted.svg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+    <p class="title logo__title">QCArchive</p>
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../overview/index.html">
+                        Overview
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        User Guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../admin_guide/index.html">
+                        Admin Guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../web_api/index.html">
+                        Web API
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../developer_guide/index.html">
+                        Developer Guide
+                      </a>
+                    </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://molssi.org">
+                    MolSSI
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/MolSSI/QCFractal" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../overview/index.html">
+                        Overview
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        User Guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../admin_guide/index.html">
+                        Admin Guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../web_api/index.html">
+                        Web API
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../developer_guide/index.html">
+                        Developer Guide
+                      </a>
+                    </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://molssi.org">
+                    MolSSI
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/MolSSI/QCFractal" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="client_setup.html">QCPortal Installation &amp; Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connecting_qcportal.html">Connecting to a server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata.html">Interpreting metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="query_iterators.html">Query Iterators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="molecule.html">Molecules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="record_retrieval.html">Retrieving records</a></li>
+<li class="toctree-l1"><a class="reference internal" href="record_submission.html">Submitting computations</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Managing Records</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datasets.html">Using datasets</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="records/index.html">Computation Types</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="records/base.html">Base Record</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="records/singlepoint.html">Singlepoint calculations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="records/optimization.html">Optimization calculations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="records/gridoptimization.html">Gridoptimization calculations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="records/torsiondrive.html">Torsiondrive calculations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="records/manybody.html">Manybody calculations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="records/reaction.html">Reaction calculations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="records/neb.html">NEB calculations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="qcportal_reference.html">QCPortal API Reference</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">QCArchive User Guide</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Managing Records</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="managing-records">
+<h1>Managing Records<a class="headerlink" href="#managing-records" title="Link to this heading">#</a></h1>
+<p>Computations are generally meant to be fire-and-forget. That is, they get submitted, after which they get
+run somewhere, and the results stored on the server where they can be queried. When dealing
+with lots of computations, though, there will always be a need for a user to manually manage them
+in some way. This includes restarting, deleting, cancelling, or otherwise modifying records in some way.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>If working with lots of calculations, it is almost always better to use a <a class="reference internal" href="datasets.html"><span class="doc">dataset</span></a>.
+Datasets allow for coordinating large numbers of similar calculations.</p>
+</div>
+<section id="record-statuses">
+<span id="record-status"></span><h2>Record Statuses<a class="headerlink" href="#record-statuses" title="Link to this heading">#</a></h2>
+<p>One important property of records is its <a class="reference internal" href="records/base.html#qcportal.record_models.RecordStatusEnum" title="qcportal.record_models.RecordStatusEnum"><code class="xref py py-class docutils literal notranslate"><span class="pre">status</span></code></a>, which
+that represents its state in the server. This is accessed by the <a class="reference internal" href="records/base.html#qcportal.record_models.BaseRecord.status" title="qcportal.record_models.BaseRecord.status"><code class="xref py py-attr docutils literal notranslate"><span class="pre">status</span></code></a>
+property on any record.</p>
+<section id="waiting">
+<h3>waiting<a class="headerlink" href="#waiting" title="Link to this heading">#</a></h3>
+<p>The record exists but has not be run, and is waiting to be picked up and run by a
+<a class="reference internal" href="../overview/glossary.html#glossary-manager"><span class="std std-ref">compute manager</span></a> (or, for a <a class="reference internal" href="../overview/glossary.html#glossary-service"><span class="std std-ref">service</span></a>,
+waiting for the first iteration to be run by the <a class="reference internal" href="../overview/glossary.html#glossary-internal-job"><span class="std std-ref">internal job</span></a> runner).</p>
+<p>This is the initial status of a newly-created record.</p>
+</section>
+<section id="running">
+<h3>running<a class="headerlink" href="#running" title="Link to this heading">#</a></h3>
+<p>The record has been claimed by a <a class="reference internal" href="../overview/glossary.html#glossary-manager"><span class="std std-ref">compute manager</span></a>
+and is either being run or has been queued to be run.</p>
+</section>
+<section id="complete">
+<h3>complete<a class="headerlink" href="#complete" title="Link to this heading">#</a></h3>
+<p>The record has been successfully computed.</p>
+<p>After completion, the <a class="reference internal" href="../overview/tasks_services.html"><span class="doc">task or service</span></a> associated with the
+record is no longer needed and has been removed.</p>
+</section>
+<section id="error">
+<h3>error<a class="headerlink" href="#error" title="Link to this heading">#</a></h3>
+<p>The record encountered an error while it was being computed.</p>
+<p>Errors can have many different causes. These can include unknown methods or basis sets,
+computations not converging, or random compute node failures on compute clusters.</p>
+<p>The <a class="reference internal" href="records/base.html#qcportal.record_models.BaseRecord.error" title="qcportal.record_models.BaseRecord.error"><code class="xref py py-attr docutils literal notranslate"><span class="pre">error</span></code></a> and possibly the
+<a class="reference internal" href="records/base.html#qcportal.record_models.BaseRecord.stdout" title="qcportal.record_models.BaseRecord.stdout"><code class="xref py py-attr docutils literal notranslate"><span class="pre">stdout</span></code></a>/<a class="reference internal" href="records/base.html#qcportal.record_models.BaseRecord.stderr" title="qcportal.record_models.BaseRecord.stderr"><code class="xref py py-attr docutils literal notranslate"><span class="pre">stderr</span></code></a>
+properties may have more details about the error.</p>
+<p>For services, this can be an error with iterating the service or an error with one
+of its dependency records.</p>
+<p>In general, a compute manager disappearing (due to shutting them down or networking errors)
+does not lead to an error state. In that case, the record will (eventually) be recycled to
+<code class="docutils literal notranslate"><span class="pre">waiting</span></code> again.</p>
+<p>To attempt to run the same record again, use <a class="reference internal" href="qcportal_reference.html#qcportal.client.PortalClient.reset_records" title="qcportal.client.PortalClient.reset_records"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reset_records()</span></code></a>.
+The server may also automatically reset errored records - see <a class="reference internal" href="../admin_guide/configuration.html#server-configuration-autoreset-error"><span class="std std-ref">autoreset error</span></a>.</p>
+</section>
+<section id="cancelled">
+<h3>cancelled<a class="headerlink" href="#cancelled" title="Link to this heading">#</a></h3>
+<p>The record was waiting or running, but has been cancelled by the user for some reason.
+A cancelled record can be uncancelled again. In the case of a service, the service
+will continue from where it left off.</p>
+<p>Client functions: <a class="reference internal" href="qcportal_reference.html#qcportal.client.PortalClient.cancel_records" title="qcportal.client.PortalClient.cancel_records"><code class="xref py py-meth docutils literal notranslate"><span class="pre">cancel_records()</span></code></a> and
+<a class="reference internal" href="qcportal_reference.html#qcportal.client.PortalClient.uncancel_records" title="qcportal.client.PortalClient.uncancel_records"><code class="xref py py-meth docutils literal notranslate"><span class="pre">uncancel_records()</span></code></a></p>
+</section>
+<section id="deleted">
+<h3>deleted<a class="headerlink" href="#deleted" title="Link to this heading">#</a></h3>
+<p>The record has been soft-deleted.</p>
+<p>While a hard-deleted record is completely removed from the database, a user may
+opt to “soft” delete the record. This sets the status to <code class="docutils literal notranslate"><span class="pre">deleted</span></code> to mark that
+the record may be removed in the future.</p>
+<p>Client functions: <a class="reference internal" href="qcportal_reference.html#qcportal.client.PortalClient.delete_records" title="qcportal.client.PortalClient.delete_records"><code class="xref py py-meth docutils literal notranslate"><span class="pre">delete_records()</span></code></a> and
+<a class="reference internal" href="qcportal_reference.html#qcportal.client.PortalClient.undelete_records" title="qcportal.client.PortalClient.undelete_records"><code class="xref py py-meth docutils literal notranslate"><span class="pre">undelete_records()</span></code></a></p>
+</section>
+<section id="invalid">
+<h3>invalid<a class="headerlink" href="#invalid" title="Link to this heading">#</a></h3>
+<p>A record that was successfully completed, but after manual review, was discovered to have
+some problem with it (for example, converging to an incorrect state). This state must be manually
+set by a user.</p>
+<p>Typically, such a record should be deleted instead. However, in some cases, it may make sense to
+keep the record around (e.g., for historical or reproducibility purposes), but with this state to signal that the
+computation can not be trusted.</p>
+<p>Client functions: <a class="reference internal" href="qcportal_reference.html#qcportal.client.PortalClient.invalidate_records" title="qcportal.client.PortalClient.invalidate_records"><code class="xref py py-meth docutils literal notranslate"><span class="pre">invalidate_records()</span></code></a> and
+<a class="reference internal" href="qcportal_reference.html#qcportal.client.PortalClient.uninvalidate_records" title="qcportal.client.PortalClient.uninvalidate_records"><code class="xref py py-meth docutils literal notranslate"><span class="pre">uninvalidate_records()</span></code></a></p>
+</section>
+</section>
+<section id="modifying-records">
+<h2>Modifying Records<a class="headerlink" href="#modifying-records" title="Link to this heading">#</a></h2>
+<section id="resetting-errored-records">
+<h3>Resetting errored records<a class="headerlink" href="#resetting-errored-records" title="Link to this heading">#</a></h3>
+<p>If a record has a status of <code class="docutils literal notranslate"><span class="pre">error</span></code>, you can manually reset it back to <code class="docutils literal notranslate"><span class="pre">waiting</span></code> so that it will run again.
+This can be useful if you think the error may be spurious or random and that running it again will be successful.
+You can check what the error is with
+the <a class="reference internal" href="records/base.html#qcportal.record_models.BaseRecord.error" title="qcportal.record_models.BaseRecord.error"><code class="xref py py-attr docutils literal notranslate"><span class="pre">error</span></code></a>, <a class="reference internal" href="records/base.html#qcportal.record_models.BaseRecord.stdout" title="qcportal.record_models.BaseRecord.stdout"><code class="xref py py-attr docutils literal notranslate"><span class="pre">stdout</span></code></a>, and
+<a class="reference internal" href="records/base.html#qcportal.record_models.BaseRecord.stderr" title="qcportal.record_models.BaseRecord.stderr"><code class="xref py py-attr docutils literal notranslate"><span class="pre">stderr</span></code></a> properties.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-0">
+PYTHON</label><div class="sd-tab-content docutils">
+<div class="highlight-py3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_records</span><span class="p">(</span><span class="mi">411</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">status</span><span class="p">)</span>
+<span class="go">RecordStatusEnum.error</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">meta</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">reset_records</span><span class="p">(</span><span class="mi">411</span><span class="p">)</span> <span class="c1"># can also take a list</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">meta</span><span class="p">)</span>
+<span class="go">UpdateMetadata(error_description=None, errors=[], updated_idx=[0], n_children_updated=0)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The <a class="reference internal" href="metadata.html"><span class="doc">metadata</span></a> is similarly to the metadata returned by <code class="docutils literal notranslate"><span class="pre">add_</span></code> functions.
+In this case, the only record (index 0) had its status updated back to <code class="docutils literal notranslate"><span class="pre">waiting</span></code> and will be picked up/run by a
+manager again.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-1" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-1">
+PYTHON</label><div class="sd-tab-content docutils">
+<div class="highlight-py3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_records</span><span class="p">(</span><span class="mi">411</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">status</span><span class="p">)</span>
+<span class="go">RecordStatusEnum.waiting</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="deleting-records">
+<h3>Deleting records<a class="headerlink" href="#deleting-records" title="Link to this heading">#</a></h3>
+<p>Records can be deleted from the server with <a class="reference internal" href="qcportal_reference.html#qcportal.client.PortalClient.delete_records" title="qcportal.client.PortalClient.delete_records"><code class="xref py py-meth docutils literal notranslate"><span class="pre">delete_records()</span></code></a>.</p>
+<p>There are a couple important arguments to this function. The first is the option to “soft delete”.
+Soft deletion means that the record is marked for deletion, but otherwise remains on the server.
+This operation can be done with <a class="reference internal" href="qcportal_reference.html#qcportal.client.PortalClient.undelete_records" title="qcportal.client.PortalClient.undelete_records"><code class="xref py py-meth docutils literal notranslate"><span class="pre">undelete_records()</span></code></a>.
+If <code class="docutils literal notranslate"><span class="pre">soft_delete=False</span></code> (“hard delete”), then the record is deleted permanently from the server.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>A record cannot be hard-deleted if it is being referenced somewhere (another record or a dataset).</p>
+</div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-2" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-2">
+PYTHON</label><div class="sd-tab-content docutils">
+<div class="highlight-py3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_records</span><span class="p">(</span><span class="mi">149</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">status</span><span class="p">)</span>
+<span class="go">RecordStatusEnum.complete</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">meta</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">delete_records</span><span class="p">(</span><span class="mi">149</span><span class="p">,</span> <span class="n">soft_delete</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># can also take a list</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">meta</span><span class="p">)</span>
+<span class="go">DeleteMetadata(error_description=None, errors=[], deleted_idx=[0], n_children_deleted=5)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_records</span><span class="p">(</span><span class="mi">149</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">status</span><span class="p">)</span>
+<span class="go">RecordStatusEnum.deleted</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Note that in this example, the child records were also (soft) deleted. This can be controlled with the
+<code class="docutils literal notranslate"><span class="pre">delete_children</span></code> argument to  <a class="reference internal" href="qcportal_reference.html#qcportal.client.PortalClient.delete_records" title="qcportal.client.PortalClient.delete_records"><code class="xref py py-meth docutils literal notranslate"><span class="pre">delete_records()</span></code></a>.
+In this case, the record was an optimization, meaning that the trajectory records were (soft) deleted.</p>
+<p>We can undo a soft deletion with <a class="reference internal" href="qcportal_reference.html#qcportal.client.PortalClient.undelete_records" title="qcportal.client.PortalClient.undelete_records"><code class="xref py py-meth docutils literal notranslate"><span class="pre">undelete_records()</span></code></a></p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-3" name="sd-tab-set-3" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-3">
+PYTHON</label><div class="sd-tab-content docutils">
+<div class="highlight-py3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">meta</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">undelete_records</span><span class="p">(</span><span class="mi">149</span><span class="p">)</span> <span class="c1"># can also take a list</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">meta</span><span class="p">)</span>
+<span class="go">UpdateMetadata(error_description=None, errors=[], updated_idx=[0], n_children_updated=5)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Hard deletions are permanent and result in the removal of the record from the server</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-4" name="sd-tab-set-4" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-4">
+PYTHON</label><div class="sd-tab-content docutils">
+<div class="highlight-py3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">meta</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">delete_records</span><span class="p">([</span><span class="mi">942</span><span class="p">,</span> <span class="mi">943</span><span class="p">],</span> <span class="n">soft_delete</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1"># can also take a list</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">meta</span><span class="p">)</span>
+<span class="go">DeleteMetadata(error_description=None, errors=[], deleted_idx=[0, 1], n_children_deleted=0)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_records</span><span class="p">(</span><span class="mi">942</span><span class="p">,</span> <span class="n">missing_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+<span class="go">None</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>A record that is deleted with <code class="docutils literal notranslate"><span class="pre">soft_delete=False</span></code> is permanently removed and can not be recovered.</p>
+</div>
+</section>
+<section id="cancelling-records">
+<h3>Cancelling records<a class="headerlink" href="#cancelling-records" title="Link to this heading">#</a></h3>
+<p>Records that are <code class="docutils literal notranslate"><span class="pre">waiting</span></code> or <code class="docutils literal notranslate"><span class="pre">running</span></code> can be cancelled with
+<a class="reference internal" href="qcportal_reference.html#qcportal.client.PortalClient.cancel_records" title="qcportal.client.PortalClient.cancel_records"><code class="xref py py-meth docutils literal notranslate"><span class="pre">cancel_records()</span></code></a>. If they were <code class="docutils literal notranslate"><span class="pre">waiting</span></code>, then they will no longer
+be picked up by a compute manager.</p>
+<p>Cancelling can be undone with <a class="reference internal" href="qcportal_reference.html#qcportal.client.PortalClient.uncancel_records" title="qcportal.client.PortalClient.uncancel_records"><code class="xref py py-meth docutils literal notranslate"><span class="pre">uncancel_records()</span></code></a>. If the record was <code class="docutils literal notranslate"><span class="pre">running</span></code>
+before it was cancelled, with will go back to a <code class="docutils literal notranslate"><span class="pre">waiting</span> <span class="pre">state</span></code>.</p>
+<p>Invalidation can be undone with <a class="reference internal" href="qcportal_reference.html#qcportal.client.PortalClient.uncancel_records" title="qcportal.client.PortalClient.uncancel_records"><code class="xref py py-meth docutils literal notranslate"><span class="pre">uncancel_records()</span></code></a>.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-5" name="sd-tab-set-5" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-5">
+PYTHON</label><div class="sd-tab-content docutils">
+<div class="highlight-py3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_records</span><span class="p">(</span><span class="mi">411</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">status</span><span class="p">)</span>
+<span class="go">RecordStatusEnum.waiting</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">meta</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">cancel_records</span><span class="p">(</span><span class="mi">411</span><span class="p">)</span> <span class="c1"># can also take a list</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">meta</span><span class="p">)</span>
+<span class="go">UpdateMetadata(error_description=None, errors=[], updated_idx=[0], n_children_updated=0)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_records</span><span class="p">(</span><span class="mi">411</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">status</span><span class="p">)</span>
+<span class="go">RecordStatusEnum.cancelled</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Cancelling a record will also cancel any parent records (for example, if this record was part of a service).</p>
+</div>
+</section>
+<section id="invalidating-records">
+<h3>Invalidating records<a class="headerlink" href="#invalidating-records" title="Link to this heading">#</a></h3>
+<p>A completed record can be marked as invalid with <a class="reference internal" href="qcportal_reference.html#qcportal.client.PortalClient.invalidate_records" title="qcportal.client.PortalClient.invalidate_records"><code class="xref py py-meth docutils literal notranslate"><span class="pre">invalidate_records()</span></code></a>. This signals
+that the record, although “successfully” completed, contains other problems and can not be trusted. Normally,
+the record should be deleted, but in some cases it may be useful to keep the record and mark it as invalid instead.</p>
+<p>Invalidation can be undone with <a class="reference internal" href="qcportal_reference.html#qcportal.client.PortalClient.uninvalidate_records" title="qcportal.client.PortalClient.uninvalidate_records"><code class="xref py py-meth docutils literal notranslate"><span class="pre">uninvalidate_records()</span></code></a>.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-6" name="sd-tab-set-6" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-6">
+PYTHON</label><div class="sd-tab-content docutils">
+<div class="highlight-py3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_records</span><span class="p">(</span><span class="mi">149</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">status</span><span class="p">)</span>
+<span class="go">RecordStatusEnum.complete</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">meta</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">invalidate_records</span><span class="p">(</span><span class="mi">149</span><span class="p">)</span> <span class="c1"># can also take a list</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">meta</span><span class="p">)</span>
+<span class="go">UpdateMetadata(error_description=None, errors=[], updated_idx=[0], n_children_updated=0)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_records</span><span class="p">(</span><span class="mi">149</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">status</span><span class="p">)</span>
+<span class="go">RecordStatusEnum.invalid</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Invalidating a record will also cancel any parent records (for example, if this record was part of a service).</p>
+</div>
+</section>
+<section id="changing-tag-and-priority">
+<h3>Changing tag and priority<a class="headerlink" href="#changing-tag-and-priority" title="Link to this heading">#</a></h3>
+<p>A record’s tag and priority can be changed if it has not yet been successfully completed (ie, the task or service
+still exists - see <a class="reference internal" href="../overview/tasks_services.html"><span class="doc">Tasks and Services</span></a>).</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-7" name="sd-tab-set-7" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-7">
+PYTHON</label><div class="sd-tab-content docutils">
+<div class="highlight-py3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_records</span><span class="p">(</span><span class="mi">941</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">task</span><span class="o">.</span><span class="n">tag</span><span class="p">,</span> <span class="n">r</span><span class="o">.</span><span class="n">task</span><span class="o">.</span><span class="n">priority</span><span class="p">)</span>
+<span class="go">* PriorityEnum.normal</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">meta</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">modify_records</span><span class="p">(</span><span class="mi">941</span><span class="p">,</span> <span class="n">new_tag</span><span class="o">=</span><span class="s1">&#39;a_new_tag&#39;</span><span class="p">,</span> <span class="n">new_priority</span><span class="o">=</span><span class="s1">&#39;low&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">meta</span><span class="p">)</span>
+<span class="go">UpdateMetadata(error_description=None, errors=[], updated_idx=[0], n_children_updated=0)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_records</span><span class="p">(</span><span class="mi">941</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">task</span><span class="o">.</span><span class="n">tag</span><span class="p">,</span> <span class="n">r</span><span class="o">.</span><span class="n">task</span><span class="o">.</span><span class="n">priority</span><span class="p">)</span>
+<span class="go">a_new_tag PriorityEnum.low</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="adding-comments">
+<h3>Adding comments<a class="headerlink" href="#adding-comments" title="Link to this heading">#</a></h3>
+<p>Comments can be added to records with <a class="reference internal" href="qcportal_reference.html#qcportal.client.PortalClient.add_comment" title="qcportal.client.PortalClient.add_comment"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_comment()</span></code></a>. These are then available
+with the <a class="reference internal" href="records/base.html#qcportal.record_models.BaseRecord.comments" title="qcportal.record_models.BaseRecord.comments"><code class="xref py py-attr docutils literal notranslate"><span class="pre">comments</span></code></a> property.</p>
+<p>The server will automatically add the time the comment was added and the name of the user adding the comment.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-8" name="sd-tab-set-8" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-8">
+PYTHON</label><div class="sd-tab-content docutils">
+<div class="highlight-py3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">meta</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">add_comment</span><span class="p">(</span><span class="mi">149</span><span class="p">,</span> <span class="s1">&#39;Invalid due to convergence to wrong minimum&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">meta</span><span class="p">)</span>
+<span class="go">UpdateMetadata(error_description=None, errors=[], updated_idx=[0], n_children_updated=0)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_records</span><span class="p">(</span><span class="mi">149</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">comments</span><span class="p">)</span>
+<span class="go">[RecordComment(id=1, record_id=149, username=&#39;ben&#39;, timestamp=datetime.datetime(2023, 1, 4, 17, 21, 1, 990674),</span>
+<span class="go">comment=&#39;Invalid due to convergence to wrong minimum&#39;)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="record_submission.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Submitting computations</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="datasets.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Using datasets</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#record-statuses">Record Statuses</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#waiting">waiting</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#running">running</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complete">complete</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#error">error</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cancelled">cancelled</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deleted">deleted</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#invalid">invalid</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modifying-records">Modifying Records</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resetting-errored-records">Resetting errored records</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deleting-records">Deleting records</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cancelling-records">Cancelling records</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#invalidating-records">Invalidating records</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-tag-and-priority">Changing tag and priority</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-comments">Adding comments</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="../_sources/user_guide/record_management.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+<div class="row h-10">
+    <div class="col-2">
+        <a href="https://molssi.org/" target="_blank" title="Go to MolSSI in a new tab">
+            <img src="../_static/molssi_main_logo.png" class="logo__image only-light footer_logo" alt="Logo image">
+            <img src="../_static/molssi_main_logo_inverted_white.png" class="logo__image only-dark footer_logo" alt="Logo image">
+        </a>
+    </div>
+    <div class="col-8">
+        <p> &copy; Copyright 2019-2023 <a href="https://molssi.org/">The Molecular Sciences Software Institute</a></p>
+        <p>Funded by the National Science Foundation 
+          <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1547580">OAC-1547580</a> and 
+          <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2136142">CHE-2136142.</a></p>
+ 
+        
+        <p class="sphinx-version">
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.2.2.<br>
+        </p>
+        
+
+        <p class="theme-version">
+        Built with a customized <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+        </p>
+
+    </div>
+    <div class="col-2">
+        <a href="https://nsf.gov/" target="_blank" title="Go to the NSF in a new tab">
+            <img src="../_static/nsf.png" class="footer_logo" alt="The NSF">
+          </a>
+    </div>
+</div></div>
+      
+    </div>
+  
+  
+</div>
+
+  </footer>
+  </body>
+</html>
