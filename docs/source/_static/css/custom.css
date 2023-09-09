@@ -28,6 +28,16 @@ html[data-theme="dark"] h1, html[data-theme="dark"] h2, html[data-theme="dark"] 
 	color: #ffffff;
 }
 
+a.headerlink {
+    color: var(--pst-color-primary-highlight);
+}
+
+nav.bd-links li>a {
+    color: var(--pst-color-primary);
+    display: block;
+    padding: 0.25rem 0;
+}
+
 
 html[data-theme="dark"] a {
 	color: #ffffff;
