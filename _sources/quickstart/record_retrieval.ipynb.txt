@@ -9,7 +9,7 @@
     "\n",
     "This tutorial introduces the basics of connecting to a QCArchive server and retrieving computation results. \n",
     "\n",
-    "When you retrieve results from QCArchive, they can be in the form of single records, or a larger dataset. \n",
+    "When you retrieve results from QCArchive, they can be in the form of single records or a larger dataset. \n",
     "\n",
     "A record represents a single quantum chemistry computation and contains the input details and the results. \n",
     "While some records represent simple computations (like a single point computation), others can encapsulate more complex workflows and multiple associated computations.\n",
@@ -287,7 +287,7 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": "3.11.0"
+   "version": "3.10.12"
   }
  },
  "nbformat": 4,

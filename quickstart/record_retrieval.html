@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>How do I retrieve computation results by ID? &#8212; QCArchive 0.0.99.post4013+g749f9bd5 documentation</title>
+    <title>How do I retrieve computation results by ID? &#8212; QCArchive 0.50.post7+g4e6ce608 documentation</title>
   
   
   
@@ -456,7 +456,7 @@ document.write(`
   <section id="how-do-i-retrieve-computation-results-by-id">
 <h1>How do I retrieve computation results by ID?<a class="headerlink" href="#how-do-i-retrieve-computation-results-by-id" title="Permalink to this heading">#</a></h1>
 <p>This tutorial introduces the basics of connecting to a QCArchive server and retrieving computation results.</p>
-<p>When you retrieve results from QCArchive, they can be in the form of single records, or a larger dataset.</p>
+<p>When you retrieve results from QCArchive, they can be in the form of single records or a larger dataset.</p>
 <p>A record represents a single quantum chemistry computation and contains the input details and the results.
 While some records represent simple computations (like a single point computation), others can encapsulate more complex workflows and multiple associated computations.</p>
 <p>A <em>dataset</em> is a collection of similar records.</p>
@@ -481,43 +481,6 @@ need to log in to submit or modify computations.</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">RuntimeError</span><span class="g g-Whitespace">                              </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Guest access</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">client</span> <span class="o">=</span> <span class="n">ptl</span><span class="o">.</span><span class="n">PortalClient</span><span class="p">(</span><span class="s2">&quot;https://qcademo.molssi.org&quot;</span><span class="p">)</span>
-
-<span class="nn">File ~/work/QCFractal/QCFractal/qcportal/qcportal/client.py:137,</span> in <span class="ni">PortalClient.__init__</span><span class="nt">(self, address, username, password, verify, show_motd)</span>
-<span class="g g-Whitespace">    </span><span class="mi">112</span> <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">113</span>     <span class="bp">self</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">114</span>     <span class="n">address</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">118</span>     <span class="n">show_motd</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">119</span> <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">120</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">121</span><span class="sd">     Parameters</span>
-<span class="g g-Whitespace">    </span><span class="mi">122</span><span class="sd">     ----------</span>
-<span class="sd">   (...)</span>
-<span class="g g-Whitespace">    </span><span class="mi">134</span><span class="sd">         If a Message-of-the-Day is available, display it</span>
-<span class="g g-Whitespace">    </span><span class="mi">135</span><span class="sd">     &quot;&quot;&quot;</span>
-<span class="ne">--&gt; </span><span class="mi">137</span>     <span class="n">PortalClientBase</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">address</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">verify</span><span class="p">,</span> <span class="n">show_motd</span><span class="p">)</span>
-
-<span class="nn">File ~/work/QCFractal/QCFractal/qcportal/qcportal/client_base.py:146,</span> in <span class="ni">PortalClientBase.__init__</span><span class="nt">(self, address, username, password, verify, show_motd)</span>
-<span class="g g-Whitespace">    </span><span class="mi">143</span> <span class="n">client_version</span> <span class="o">=</span> <span class="n">parse_version</span><span class="p">(</span><span class="n">__version__</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">145</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">client_version_lower_limit</span> <span class="o">&lt;=</span> <span class="n">client_version</span> <span class="o">&lt;=</span> <span class="n">client_version_upper_limit</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">146</span>     <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">147</span>         <span class="sa">f</span><span class="s2">&quot;This client version </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">client_version</span><span class="p">)</span><span class="si">}</span><span class="s2"> does not fall within the server&#39;s allowed &quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">148</span>         <span class="sa">f</span><span class="s2">&quot;client versions of [</span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">client_version_lower_limit</span><span class="p">)</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">client_version_upper_limit</span><span class="p">)</span><span class="si">}</span><span class="s2">].&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">149</span>         <span class="sa">f</span><span class="s2">&quot;You may need to upgrade or downgrade&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">150</span>     <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">152</span> <span class="n">motd</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">server_info</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;motd&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">153</span> <span class="k">if</span> <span class="n">show_motd</span> <span class="ow">and</span> <span class="n">motd</span><span class="p">:</span>
-
-<span class="ne">RuntimeError</span>: This client version 0.0.99.post4013+g749f9bd5 does not fall within the server&#39;s allowed client versions of [0.50b12.post35, 1].You may need to upgrade or downgrade
-</pre></div>
-</div>
-</div>
 </div>
 <div class="note admonition">
 <p class="admonition-title">Connecting with username/password</p>
@@ -539,6 +502,11 @@ need to log in to submit or modify computations.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;SinglepointRecord id=1 status=complete&gt;
+</pre></div>
+</div>
+</div>
 </div>
 <p>From printing the record, we see that the record with ID 1 is a single point calculation (<code class="docutils literal notranslate"><span class="pre">SinglePointRecord</span></code>) and that this computation is “complete” (<code class="docutils literal notranslate"><span class="pre">RecordStatusEnum.complete</span></code>).</p>
 <section id="viewing-record-information">
@@ -550,6 +518,11 @@ need to log in to submit or modify computations.</p>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The molecule that we computed</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="o">.</span><span class="n">molecule</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Molecule(name=&#39;He&#39;, formula=&#39;He&#39;, hash=&#39;b3855c6&#39;)
 </pre></div>
 </div>
 </div>
@@ -570,6 +543,11 @@ as well as information about the method as basis.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>program=&#39;psi4&#39; driver=&lt;SinglepointDriver.energy: &#39;energy&#39;&gt; method=&#39;hf&#39; basis=&#39;sto-3g&#39; keywords={&#39;maxiter&#39;: 100} protocols=AtomicResultProtocols(wavefunction=&lt;WavefunctionProtocolEnum.none: &#39;none&#39;&gt;, stdout=True, error_correction=ErrorCorrectionProtocol(default_policy=True, policies=None), native_files=&lt;NativeFilesProtocolEnum.none: &#39;none&#39;&gt;)
+</pre></div>
+</div>
+</div>
 </div>
 <p>The specification printed above tells us that this calculation was performed
 with the Psi4 software using the <code class="docutils literal notranslate"><span class="pre">hf</span></code> method and <code class="docutils literal notranslate"><span class="pre">sto-3g</span></code> basis set.</p>
@@ -587,12 +565,26 @@ However, more than one record at a time can be retrieved by passing a list of co
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Retrieved 3 records.
+</pre></div>
+</div>
+</div>
 </div>
 <p>Using, the information presented earlier, we can see data about each computation.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">records</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="p">,</span> <span class="n">record</span><span class="o">.</span><span class="n">molecule</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;SinglepointRecord id=1 status=complete&gt; Molecule(name=&#39;He&#39;, formula=&#39;He&#39;, hash=&#39;b3855c6&#39;)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;SinglepointRecord id=2 status=complete&gt; Molecule(name=&#39;B&#39;, formula=&#39;B&#39;, hash=&#39;52710ba&#39;)
+&lt;SinglepointRecord id=3 status=complete&gt; Molecule(name=&#39;H&#39;, formula=&#39;H&#39;, hash=&#39;512c204&#39;)
 </pre></div>
 </div>
 </div>
@@ -609,6 +601,11 @@ For example, to retrieve single point computations only, you can use the method 
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">records</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_singlepoints</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">records</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[SinglepointRecord(id=1, record_type=&#39;singlepoint&#39;, is_service=False, properties={&#39;pe energy&#39;: 0.0, &#39;scf dipole&#39;: [0.0, 0.0, 0.0], &#39;calcinfo_nmo&#39;: 1, &#39;return_energy&#39;: -2.807913354492941, &#39;return_result&#39;: -2.807913354492941, &#39;calcinfo_natom&#39;: 1, &#39;calcinfo_nbeta&#39;: 1, &#39;current dipole&#39;: [0.0, 0.0, 0.0], &#39;current energy&#39;: -2.807913354492941, &#39;return_hessian&#39;: None, &#39;scf iterations&#39;: 2.0, &#39;scf_iterations&#39;: 2, &#39;calcinfo_nalpha&#39;: 1, &#39;calcinfo_nbasis&#39;: 1, &#39;hf total energy&#39;: -2.807913354492941, &#39;return_gradient&#39;: None, &#39;scf total energy&#39;: -2.807913354492941, &#39;scf_total_energy&#39;: -2.807913354492941, &#39;scf_dipole_moment&#39;: [0.0, 0.0, 0.0], &#39;scf_total_hessian&#39;: None, &#39;scf_total_gradient&#39;: None, &#39;one-electron energy&#39;: -3.863496900275047, &#39;two-electron energy&#39;: 1.0555835457821061, &#39;scf iteration energy&#39;: -2.807913354492941, &#39;pcm polarization energy&#39;: 0.0, &#39;scf_one_electron_energy&#39;: -3.863496900275047, &#39;scf_two_electron_energy&#39;: 1.0555835457821061, &#39;current reference energy&#39;: -2.807913354492941, &#39;nuclear repulsion energy&#39;: 0.0, &#39;nuclear_repulsion_energy&#39;: 0.0}, extras={}, status=&lt;RecordStatusEnum.complete: &#39;complete&#39;&gt;, manager_name=&#39;ARC_Tinkercliffs-tinkercliffs1-cd6a1bac-aaae-4e52-917c-4f9a384de051&#39;, created_on=datetime.datetime(2023, 1, 13, 20, 29, 58, 880899), modified_on=datetime.datetime(2023, 7, 25, 20, 51, 59, 216633), owner_user=&#39;ben&#39;, owner_group=None, compute_history_=None, task_=None, service_=None, comments_=None, native_files_=None, specification=QCSpecification(program=&#39;psi4&#39;, driver=&lt;SinglepointDriver.energy: &#39;energy&#39;&gt;, method=&#39;hf&#39;, basis=&#39;sto-3g&#39;, keywords={&#39;maxiter&#39;: 100}, protocols=AtomicResultProtocols(wavefunction=&lt;WavefunctionProtocolEnum.none: &#39;none&#39;&gt;, stdout=True, error_correction=ErrorCorrectionProtocol(default_policy=True, policies=None), native_files=&lt;NativeFilesProtocolEnum.none: &#39;none&#39;&gt;)), molecule_id=2, molecule_=None, wavefunction_=None), SinglepointRecord(id=2, record_type=&#39;singlepoint&#39;, is_service=False, properties={&#39;pe energy&#39;: 0.0, &#39;scf dipole&#39;: [0.0, 0.0, 0.0], &#39;calcinfo_nmo&#39;: 5, &#39;return_energy&#39;: -24.14911660463428, &#39;return_result&#39;: -24.14911660463428, &#39;calcinfo_natom&#39;: 1, &#39;calcinfo_nbeta&#39;: 2, &#39;current dipole&#39;: [0.0, 0.0, 0.0], &#39;current energy&#39;: -24.14911660463428, &#39;return_hessian&#39;: None, &#39;scf iterations&#39;: 2.0, &#39;scf_iterations&#39;: 2, &#39;calcinfo_nalpha&#39;: 3, &#39;calcinfo_nbasis&#39;: 5, &#39;hf total energy&#39;: -24.14911660463428, &#39;return_gradient&#39;: None, &#39;scf total energy&#39;: -24.14911660463428, &#39;scf_total_energy&#39;: -24.14911660463428, &#39;scf_dipole_moment&#39;: [0.0, 0.0, 0.0], &#39;scf_total_hessian&#39;: None, &#39;scf_total_gradient&#39;: None, &#39;one-electron energy&#39;: -32.84342235880991, &#39;two-electron energy&#39;: 8.69430575417563, &#39;scf iteration energy&#39;: -24.14911660463428, &#39;pcm polarization energy&#39;: 0.0, &#39;scf_one_electron_energy&#39;: -32.84342235880991, &#39;scf_two_electron_energy&#39;: 8.69430575417563, &#39;current reference energy&#39;: -24.14911660463428, &#39;nuclear repulsion energy&#39;: 0.0, &#39;nuclear_repulsion_energy&#39;: 0.0}, extras={}, status=&lt;RecordStatusEnum.complete: &#39;complete&#39;&gt;, manager_name=&#39;ARC_Tinkercliffs-tinkercliffs1-cd6a1bac-aaae-4e52-917c-4f9a384de051&#39;, created_on=datetime.datetime(2023, 1, 13, 20, 29, 58, 880910), modified_on=datetime.datetime(2023, 7, 25, 20, 51, 59, 216668), owner_user=&#39;ben&#39;, owner_group=None, compute_history_=None, task_=None, service_=None, comments_=None, native_files_=None, specification=QCSpecification(program=&#39;psi4&#39;, driver=&lt;SinglepointDriver.energy: &#39;energy&#39;&gt;, method=&#39;hf&#39;, basis=&#39;sto-3g&#39;, keywords={&#39;maxiter&#39;: 100}, protocols=AtomicResultProtocols(wavefunction=&lt;WavefunctionProtocolEnum.none: &#39;none&#39;&gt;, stdout=True, error_correction=ErrorCorrectionProtocol(default_policy=True, policies=None), native_files=&lt;NativeFilesProtocolEnum.none: &#39;none&#39;&gt;)), molecule_id=5, molecule_=None, wavefunction_=None)]
 </pre></div>
 </div>
 </div>
