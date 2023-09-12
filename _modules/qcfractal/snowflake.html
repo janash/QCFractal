@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>qcfractal.snowflake &#8212; QCArchive 0.0.99.post3996+g5051dd66 documentation</title>
+    <title>qcfractal.snowflake &#8212; QCArchive 0.0.99.post4013+g749f9bd5 documentation</title>
   
   
   
@@ -450,8 +450,6 @@ document.write(`
 
 <span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="kn">from</span> <span class="nn">qcfractalcompute.compute_manager</span> <span class="kn">import</span> <span class="n">ComputeManager</span>
-<span class="kn">from</span> <span class="nn">qcfractalcompute.config</span> <span class="kn">import</span> <span class="n">FractalComputeConfig</span><span class="p">,</span> <span class="n">FractalServerSettings</span><span class="p">,</span> <span class="n">LocalExecutorConfig</span>
 <span class="kn">from</span> <span class="nn">qcportal</span> <span class="kn">import</span> <span class="n">PortalClient</span>
 <span class="kn">from</span> <span class="nn">qcportal.record_models</span> <span class="kn">import</span> <span class="n">RecordStatusEnum</span>
 <span class="kn">from</span> <span class="nn">.config</span> <span class="kn">import</span> <span class="n">FractalConfig</span><span class="p">,</span> <span class="n">DatabaseConfig</span><span class="p">,</span> <span class="n">update_nested_dict</span>
@@ -459,6 +457,12 @@ document.write(`
 <span class="kn">from</span> <span class="nn">.job_runner</span> <span class="kn">import</span> <span class="n">FractalJobRunner</span>
 <span class="kn">from</span> <span class="nn">.port_util</span> <span class="kn">import</span> <span class="n">find_open_port</span>
 <span class="kn">from</span> <span class="nn">.postgres_harness</span> <span class="kn">import</span> <span class="n">create_snowflake_postgres</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">qcfractalcompute.compute_manager</span> <span class="kn">import</span> <span class="n">ComputeManager</span>
+    <span class="kn">from</span> <span class="nn">qcfractalcompute.config</span> <span class="kn">import</span> <span class="n">FractalComputeConfig</span><span class="p">,</span> <span class="n">FractalServerSettings</span><span class="p">,</span> <span class="n">LocalExecutorConfig</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;qcfractalcompute is not installed. Snowflake is useless without it&quot;</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="n">TYPE_CHECKING</span><span class="p">:</span>
     <span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Any</span><span class="p">,</span> <span class="n">Sequence</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Set</span>
