@@ -2,7 +2,7 @@ QCArchive Quickstart
 =====================================
 
 QCArchive is a data generation and retrieval platform specialized for quantum chemistry calculation.
-These quickstart tutorials demonstrate the record_basics of retrieving results
+These quickstart tutorials demonstrate the basics of retrieving results
 and submitting computations using the QCArchive Python API.
 
 Depending on your use case for QCArchive, there are many things you might try to do.
