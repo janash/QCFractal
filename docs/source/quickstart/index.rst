@@ -22,6 +22,17 @@ It is recommended to install QCArchive in its own environment.
    conda create -n qcportal qcportal -c qcarchive/label/next
    conda activate qcportal
 
+Overview Tutorials
+------------------
+We recommend starting with our 15 minutes to QCArchive tutorial.
+
+.. toctree::
+   :maxdepth: 1
+   
+   qca_15min.ipynb
+
+
+
 
 Tutorials
 ---------

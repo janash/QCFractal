@@ -4,8 +4,8 @@ html[data-theme="light"] {
     --pst-color-primary: #0080C7;
 	--pst-color-warning: #ed1c24;
 	--pst-color-primary-highlight: #288ec5;
-	--pst-color-secondary: #ed1c24;
-	--pst-color-secondary-highlight: #bc151b;
+	--pst-color-secondary: #513D92;
+	--pst-color-secondary-highlight: #5f48a9;
 }
 
 
@@ -14,10 +14,8 @@ html[data-theme="dark"] {
 	--pst-color-warning: #ed1c24;
 	--pst-color-primary-highlight: #288ec5;
 	--pst-color-background: #1A1A1A;
-	--pst-color-secondary: #ed1c24;
-	--pst-color-secondary-highlight: #bc151b;
-
-	
+	--pst-color-secondary: #513D92;
+	--pst-color-secondary-highlight: #5f48a9;
 }
 
 html[data-theme="light"] a:hover {
