@@ -33,7 +33,7 @@ jobs:
         shell: bash -l {0}
         working-directory: docs
         run: |
-          export QCArchiveUsername=${{ secrets.QCARCHIVEUSRNAME }}
+          export QCArchiveUsername=${{ secrets.QCARCHIVEUSERNAME }}
           export QCArchivePWD=${{ secrets.QCARCHIVEPWD }}
           cd docs
           make html
