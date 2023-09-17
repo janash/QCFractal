@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>QCArchive in 15 minutes &#8212; QCArchive 0.50.post9+g78365825 documentation</title>
+    <title>QCArchive in 15 minutes &#8212; QCArchive 0.50.post10+g6efe02eb documentation</title>
   
   
   
@@ -772,6 +772,47 @@ We retrieve these using <code class="docutils literal notranslate"><span class="
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AuthenticationFailure</span><span class="g g-Whitespace">                     </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span> <span class="n">line</span> <span class="mi">6</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">qcportal</span> <span class="k">as</span> <span class="nn">ptl</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">qcportal.molecules</span> <span class="kn">import</span> <span class="n">Molecule</span>
+<span class="ne">----&gt; </span><span class="mi">6</span> <span class="n">client</span> <span class="o">=</span> <span class="n">ptl</span><span class="o">.</span><span class="n">PortalClient</span><span class="p">(</span><span class="s2">&quot;https://qcademo.molssi.org&quot;</span><span class="p">,</span> 
+<span class="g g-Whitespace">      </span><span class="mi">7</span>                           <span class="n">username</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;QCArchiveUsername&quot;</span><span class="p">),</span> 
+<span class="g g-Whitespace">      </span><span class="mi">8</span>                           <span class="n">password</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;QCArchivePWD&quot;</span><span class="p">))</span>
+
+<span class="nn">File ~/work/QCFractal/QCFractal/qcportal/qcportal/client.py:137,</span> in <span class="ni">PortalClient.__init__</span><span class="nt">(self, address, username, password, verify, show_motd)</span>
+<span class="g g-Whitespace">    </span><span class="mi">112</span> <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">113</span>     <span class="bp">self</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">114</span>     <span class="n">address</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">118</span>     <span class="n">show_motd</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">119</span> <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">120</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">121</span><span class="sd">     Parameters</span>
+<span class="g g-Whitespace">    </span><span class="mi">122</span><span class="sd">     ----------</span>
+<span class="sd">   (...)</span>
+<span class="g g-Whitespace">    </span><span class="mi">134</span><span class="sd">         If a Message-of-the-Day is available, display it</span>
+<span class="g g-Whitespace">    </span><span class="mi">135</span><span class="sd">     &quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">137</span>     <span class="n">PortalClientBase</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">address</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">verify</span><span class="p">,</span> <span class="n">show_motd</span><span class="p">)</span>
+
+<span class="nn">File ~/work/QCFractal/QCFractal/qcportal/qcportal/client_base.py:128,</span> in <span class="ni">PortalClientBase.__init__</span><span class="nt">(self, address, username, password, verify, show_motd)</span>
+<span class="g g-Whitespace">    </span><span class="mi">126</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_username</span> <span class="o">=</span> <span class="n">username</span>
+<span class="g g-Whitespace">    </span><span class="mi">127</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_password</span> <span class="o">=</span> <span class="n">password</span>
+<span class="ne">--&gt; </span><span class="mi">128</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_get_JWT_token</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">129</span> <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">130</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_username</span> <span class="o">=</span> <span class="kc">None</span>
+
+<span class="nn">File ~/work/QCFractal/QCFractal/qcportal/qcportal/client_base.py:255,</span> in <span class="ni">PortalClientBase._get_JWT_token</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">253</span> <span class="k">except</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">254</span>     <span class="n">msg</span> <span class="o">=</span> <span class="n">ret</span><span class="o">.</span><span class="n">reason</span>
+<span class="ne">--&gt; </span><span class="mi">255</span> <span class="k">raise</span> <span class="n">AuthenticationFailure</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+
+<span class="ne">AuthenticationFailure</span>: Username is empty
+</pre></div>
+</div>
+</div>
 </div>
 <p>We now have a QCPortal client that can be used to submit computations.</p>
 <section id="how-do-i-submit-a-computation">
@@ -804,14 +845,6 @@ the variable representing the molecule as the last thing in a cell.</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Install nglview for interactive visualization.&#39;
-</pre></div>
-</div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;Molecule(name=&#39;H2O&#39;, formula=&#39;H2O&#39;, hash=&#39;04033ab&#39;)&quot;
-</pre></div>
-</div>
-</div>
 </div>
 <p>To submit our single point computation, we will use the <code class="docutils literal notranslate"><span class="pre">add_singlepoints</span></code> method.
 We will submit two single point computations for the same molecule using different methods.</p>
@@ -831,47 +864,6 @@ For this demonstration, we are submitting two single point calculations for wate
                                                    <span class="n">driver</span><span class="o">=</span><span class="s1">&#39;energy&#39;</span><span class="p">,</span> 
                                                    <span class="n">method</span><span class="o">=</span><span class="s1">&#39;mp2&#39;</span><span class="p">,</span> 
                                                    <span class="n">basis</span><span class="o">=</span><span class="s1">&#39;def2-tzvp&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">PortalRequestError</span><span class="g g-Whitespace">                        </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">13</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">b3lyp_meta</span><span class="p">,</span> <span class="n">b3lyp_record_ids</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">add_singlepoints</span><span class="p">([</span><span class="n">water</span><span class="p">],</span> 
-<span class="g g-Whitespace">      </span><span class="mi">2</span>                                                        <span class="n">program</span><span class="o">=</span><span class="s1">&#39;psi4&#39;</span><span class="p">,</span> 
-<span class="g g-Whitespace">      </span><span class="mi">3</span>                                                        <span class="n">driver</span><span class="o">=</span><span class="s1">&#39;energy&#39;</span><span class="p">,</span> 
-<span class="g g-Whitespace">      </span><span class="mi">4</span>                                                        <span class="n">method</span><span class="o">=</span><span class="s1">&#39;b3lyp&#39;</span><span class="p">,</span> 
-<span class="g g-Whitespace">      </span><span class="mi">5</span>                                                        <span class="n">basis</span><span class="o">=</span><span class="s1">&#39;def2-tzvp&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="n">mp2_meta</span><span class="p">,</span> <span class="n">mp2_record_ids</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">add_singlepoints</span><span class="p">([</span><span class="n">water</span><span class="p">],</span> 
-<span class="g g-Whitespace">      </span><span class="mi">8</span>                                                    <span class="n">program</span><span class="o">=</span><span class="s1">&#39;psi4&#39;</span><span class="p">,</span> 
-<span class="g g-Whitespace">      </span><span class="mi">9</span>                                                    <span class="n">driver</span><span class="o">=</span><span class="s1">&#39;energy&#39;</span><span class="p">,</span> 
-<span class="g g-Whitespace">     </span><span class="mi">10</span>                                                    <span class="n">method</span><span class="o">=</span><span class="s1">&#39;mp2&#39;</span><span class="p">,</span> 
-<span class="g g-Whitespace">     </span><span class="mi">11</span>                                                    <span class="n">basis</span><span class="o">=</span><span class="s1">&#39;def2-tzvp&#39;</span><span class="p">)</span>
-
-<span class="nn">File ~/work/QCFractal/QCFractal/qcportal/qcportal/client.py:987,</span> in <span class="ni">PortalClient.add_singlepoints</span><span class="nt">(self, molecules, program, driver, method, basis, keywords, protocols, tag, priority, owner_group, find_existing)</span>
-<span class="g g-Whitespace">    </span><span class="mi">984</span>     <span class="n">body_data</span><span class="p">[</span><span class="s2">&quot;specification&quot;</span><span class="p">][</span><span class="s2">&quot;protocols&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">protocols</span>
-<span class="g g-Whitespace">    </span><span class="mi">986</span> <span class="n">body</span> <span class="o">=</span> <span class="n">SinglepointAddBody</span><span class="p">(</span><span class="o">**</span><span class="n">body_data</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">987</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">make_request</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">988</span>     <span class="s2">&quot;post&quot;</span><span class="p">,</span> <span class="s2">&quot;api/v1/records/singlepoint/bulkCreate&quot;</span><span class="p">,</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">InsertMetadata</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]],</span> <span class="n">body</span><span class="o">=</span><span class="n">body</span>
-<span class="g g-Whitespace">    </span><span class="mi">989</span> <span class="p">)</span>
-
-<span class="nn">File ~/work/QCFractal/QCFractal/qcportal/qcportal/client_base.py:358,</span> in <span class="ni">PortalClientBase.make_request</span><span class="nt">(self, method, endpoint, response_model, body_model, url_params_model, body, url_params)</span>
-<span class="g g-Whitespace">    </span><span class="mi">355</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">parsed_url_params</span><span class="p">,</span> <span class="n">pydantic</span><span class="o">.</span><span class="n">BaseModel</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">356</span>     <span class="n">parsed_url_params</span> <span class="o">=</span> <span class="n">parsed_url_params</span><span class="o">.</span><span class="n">dict</span><span class="p">()</span>
-<span class="ne">--&gt; </span><span class="mi">358</span> <span class="n">r</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_request</span><span class="p">(</span><span class="n">method</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">,</span> <span class="n">body</span><span class="o">=</span><span class="n">serialized_body</span><span class="p">,</span> <span class="n">url_params</span><span class="o">=</span><span class="n">parsed_url_params</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">359</span> <span class="n">d</span> <span class="o">=</span> <span class="n">deserialize</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="n">r</span><span class="o">.</span><span class="n">headers</span><span class="p">[</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">])</span>
-<span class="g g-Whitespace">    </span><span class="mi">361</span> <span class="k">if</span> <span class="n">response_model</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-
-<span class="nn">File ~/work/QCFractal/QCFractal/qcportal/qcportal/client_base.py:323,</span> in <span class="ni">PortalClientBase._request</span><span class="nt">(self, method, endpoint, body, url_params, retry)</span>
-<span class="g g-Whitespace">    </span><span class="mi">318</span>     <span class="k">except</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">319</span>         <span class="c1"># If this error comes from, ie, the web server or something else, then</span>
-<span class="g g-Whitespace">    </span><span class="mi">320</span>         <span class="c1"># we have to use &#39;reason&#39;</span>
-<span class="g g-Whitespace">    </span><span class="mi">321</span>         <span class="n">details</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;msg&quot;</span><span class="p">:</span> <span class="n">r</span><span class="o">.</span><span class="n">reason</span><span class="p">}</span>
-<span class="ne">--&gt; </span><span class="mi">323</span>     <span class="k">raise</span> <span class="n">PortalRequestError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Request failed: </span><span class="si">{</span><span class="n">details</span><span class="p">[</span><span class="s1">&#39;msg&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">r</span><span class="o">.</span><span class="n">status_code</span><span class="p">,</span> <span class="n">details</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">325</span> <span class="k">return</span> <span class="n">r</span>
-
-<span class="ne">PortalRequestError</span>: Request failed: 403 Forbidden: User {&#39;user_id&#39;: None, &#39;username&#39;: None} is not authorized to access &#39;{&#39;type&#39;: &#39;/api/v1/records&#39;}&#39; (HTTP status 403)
 </pre></div>
 </div>
 </div>
