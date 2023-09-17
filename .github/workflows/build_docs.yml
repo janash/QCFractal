@@ -3,10 +3,10 @@ name: Build and Deploy Docs
 on:
   push:
     branches:
-      - main
+      - docs-build
   pull_request:
     branches:
-      - main
+      - next
 
 permissions: write-all
 
@@ -40,3 +40,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: docs/build/html
+          branch: test-docs
