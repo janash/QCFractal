@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>QCArchive in 15 minutes &#8212; QCArchive 0.50.post10+g6efe02eb documentation</title>
+    <title>QCArchive in 15 minutes &#8212; QCArchive 0.50.post11+g80295b7b documentation</title>
   
   
   
@@ -571,9 +571,7 @@ In the cell below, we print the SCF total energy from our calcuation.</p>
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Molecule: B, Energy: -24.14911660463428
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Molecule: H, Energy: -0.46658184955727533
+Molecule: H, Energy: -0.46658184955727533
 </pre></div>
 </div>
 </div>
@@ -776,47 +774,6 @@ We retrieve these using <code class="docutils literal notranslate"><span class="
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">AuthenticationFailure</span><span class="g g-Whitespace">                     </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span> <span class="n">line</span> <span class="mi">6</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">qcportal</span> <span class="k">as</span> <span class="nn">ptl</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">qcportal.molecules</span> <span class="kn">import</span> <span class="n">Molecule</span>
-<span class="ne">----&gt; </span><span class="mi">6</span> <span class="n">client</span> <span class="o">=</span> <span class="n">ptl</span><span class="o">.</span><span class="n">PortalClient</span><span class="p">(</span><span class="s2">&quot;https://qcademo.molssi.org&quot;</span><span class="p">,</span> 
-<span class="g g-Whitespace">      </span><span class="mi">7</span>                           <span class="n">username</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;QCArchiveUsername&quot;</span><span class="p">),</span> 
-<span class="g g-Whitespace">      </span><span class="mi">8</span>                           <span class="n">password</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;QCArchivePWD&quot;</span><span class="p">))</span>
-
-<span class="nn">File ~/work/QCFractal/QCFractal/qcportal/qcportal/client.py:137,</span> in <span class="ni">PortalClient.__init__</span><span class="nt">(self, address, username, password, verify, show_motd)</span>
-<span class="g g-Whitespace">    </span><span class="mi">112</span> <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">113</span>     <span class="bp">self</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">114</span>     <span class="n">address</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">118</span>     <span class="n">show_motd</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">119</span> <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">120</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">121</span><span class="sd">     Parameters</span>
-<span class="g g-Whitespace">    </span><span class="mi">122</span><span class="sd">     ----------</span>
-<span class="sd">   (...)</span>
-<span class="g g-Whitespace">    </span><span class="mi">134</span><span class="sd">         If a Message-of-the-Day is available, display it</span>
-<span class="g g-Whitespace">    </span><span class="mi">135</span><span class="sd">     &quot;&quot;&quot;</span>
-<span class="ne">--&gt; </span><span class="mi">137</span>     <span class="n">PortalClientBase</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">address</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">verify</span><span class="p">,</span> <span class="n">show_motd</span><span class="p">)</span>
-
-<span class="nn">File ~/work/QCFractal/QCFractal/qcportal/qcportal/client_base.py:128,</span> in <span class="ni">PortalClientBase.__init__</span><span class="nt">(self, address, username, password, verify, show_motd)</span>
-<span class="g g-Whitespace">    </span><span class="mi">126</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_username</span> <span class="o">=</span> <span class="n">username</span>
-<span class="g g-Whitespace">    </span><span class="mi">127</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_password</span> <span class="o">=</span> <span class="n">password</span>
-<span class="ne">--&gt; </span><span class="mi">128</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_get_JWT_token</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">129</span> <span class="k">else</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">130</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_username</span> <span class="o">=</span> <span class="kc">None</span>
-
-<span class="nn">File ~/work/QCFractal/QCFractal/qcportal/qcportal/client_base.py:255,</span> in <span class="ni">PortalClientBase._get_JWT_token</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">253</span> <span class="k">except</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">254</span>     <span class="n">msg</span> <span class="o">=</span> <span class="n">ret</span><span class="o">.</span><span class="n">reason</span>
-<span class="ne">--&gt; </span><span class="mi">255</span> <span class="k">raise</span> <span class="n">AuthenticationFailure</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
-
-<span class="ne">AuthenticationFailure</span>: Username is empty
-</pre></div>
-</div>
-</div>
 </div>
 <p>We now have a QCPortal client that can be used to submit computations.</p>
 <section id="how-do-i-submit-a-computation">
@@ -846,6 +803,14 @@ the variable representing the molecule as the last thing in a cell.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">water</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Install nglview for interactive visualization.&#39;
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;Molecule(name=&#39;H2O&#39;, formula=&#39;H2O&#39;, hash=&#39;04033ab&#39;)&quot;
 </pre></div>
 </div>
 </div>
@@ -883,12 +848,24 @@ For this demonstration, we are submitting two single point calculations for wate
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>B3LYP Status:	complete
+MP2 Status:	complete
+</pre></div>
+</div>
+</div>
 </div>
 <p>When the computations are complete, we can retrieve the energies in the same way we did earlier.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;B3LYP result: </span><span class="si">{</span><span class="n">b3lpy_record</span><span class="o">.</span><span class="n">return_result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;MP2 result: </span><span class="si">{</span><span class="n">mp2_record</span><span class="o">.</span><span class="n">return_result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>B3LYP result: -76.4613856254828
+MP2 result: -76.32997687939557
 </pre></div>
 </div>
 </div>
