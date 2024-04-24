@@ -1,0 +1,2721 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index &#8212; QCArchive 0.50.post249+gca892bad documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/autodoc_pydantic.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=3f4ed3ce" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=a0fbfd44"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
+    <link rel="index" title="Index" href="#" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/qcarchive_logo.svg" class="logo__image only-light" alt=""/>
+    <script>document.write(`<img src="_static/qcarchive_logo_inverted.svg" class="logo__image only-dark" alt=""/>`);</script>
+  
+  
+    <p class="title logo__title">QCArchive</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="quickstart/index.html">
+                        Quickstart
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="overview/index.html">
+                        Overview
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="user_guide/index.html">
+                        User Guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="release_notes.html">
+                        Release Notes
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="admin_guide/index.html">
+                        Admin Guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="web_api/index.html">
+                        Web API
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="developer_guide/index.html">
+                        Developer Guide
+                      </a>
+                    </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://molssi.org">
+                    MolSSI
+                  </a>
+                </li>
+                
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/MolSSI/QCFractal" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="quickstart/index.html">
+                        Quickstart
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="overview/index.html">
+                        Overview
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="user_guide/index.html">
+                        User Guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="release_notes.html">
+                        Release Notes
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="admin_guide/index.html">
+                        Admin Guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="web_api/index.html">
+                        Web API
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="developer_guide/index.html">
+                        Developer Guide
+                      </a>
+                    </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://molssi.org">
+                    MolSSI
+                  </a>
+                </li>
+                
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/MolSSI/QCFractal" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article"></div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+
+<h1 id="index">Index</h1>
+
+<div class="genindex-jumpbox">
+ <a href="#A"><strong>A</strong></a>
+ | <a href="#B"><strong>B</strong></a>
+ | <a href="#C"><strong>C</strong></a>
+ | <a href="#D"><strong>D</strong></a>
+ | <a href="#E"><strong>E</strong></a>
+ | <a href="#F"><strong>F</strong></a>
+ | <a href="#G"><strong>G</strong></a>
+ | <a href="#H"><strong>H</strong></a>
+ | <a href="#I"><strong>I</strong></a>
+ | <a href="#J"><strong>J</strong></a>
+ | <a href="#K"><strong>K</strong></a>
+ | <a href="#L"><strong>L</strong></a>
+ | <a href="#M"><strong>M</strong></a>
+ | <a href="#N"><strong>N</strong></a>
+ | <a href="#O"><strong>O</strong></a>
+ | <a href="#P"><strong>P</strong></a>
+ | <a href="#Q"><strong>Q</strong></a>
+ | <a href="#R"><strong>R</strong></a>
+ | <a href="#S"><strong>S</strong></a>
+ | <a href="#T"><strong>T</strong></a>
+ | <a href="#U"><strong>U</strong></a>
+ | <a href="#V"><strong>V</strong></a>
+ | <a href="#W"><strong>W</strong></a>
+ | <a href="#Z"><strong>Z</strong></a>
+ 
+</div>
+<h2 id="A">A</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.TaskReturnMetadata.accepted_ids">accepted_ids (TaskReturnMetadata attribute)</a>
+</li>
+      <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.SlurmExecutorConfig.account">account (SlurmExecutorConfig attribute)</a>
+
+      <ul>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.TorqueExecutorConfig.account">(TorqueExecutorConfig attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.add_comment">add_comment() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.add_dataset">add_dataset() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.add_gridoptimizations">add_gridoptimizations() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.add_group">add_group() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.add_manybodys">add_manybodys() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.add_molecules">add_molecules() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.add_nebs">add_nebs() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.add_optimizations">add_optimizations() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.add_reactions">add_reactions() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.add_role">add_role() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.add_singlepoints">add_singlepoints() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.add_torsiondrives">add_torsiondrives() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.add_user">add_user() (PortalClient method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobQueryFilters.added_after">added_after (InternalJobQueryFilters attribute)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobQueryFilters.added_before">added_before (InternalJobQueryFilters attribute)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJob.added_date">added_date (InternalJob attribute)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJob.after_function">after_function (InternalJob attribute)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJob.after_function_kwargs">after_function_kwargs (InternalJob attribute)</a>
+</li>
+      <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.Config.allow_mutation">allow_mutation (GridoptimizationRecord.Config attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.Config.allow_mutation">(ManybodyRecord.Config attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.Config.allow_mutation">(NEBRecord.Config attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.Config.allow_mutation">(OptimizationRecord.Config attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.Config.allow_mutation">(ReactionRecord.Config attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.Config.allow_mutation">(SinglepointRecord.Config attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.Config.allow_mutation">(TorsiondriveRecord.Config attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.PriorityEnum.as_integer_ratio">as_integer_ratio() (PriorityEnum method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.assert_is_not_view">assert_is_not_view() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.assert_online">assert_online() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.auto_fetch_missing">auto_fetch_missing (BaseDataset attribute)</a>
+</li>
+      <li><a href="overview/snowflake.html#qcfractal.snowflake.FractalSnowflake.await_results">await_results() (FractalSnowflake method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="B">B</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.QCSpecification.basis">basis (QCSpecification attribute)</a>
+</li>
+      <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LocalExecutorConfig.bind_address">bind_address (LocalExecutorConfig attribute)</a>
+
+      <ul>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LSFExecutorConfig.bind_address">(LSFExecutorConfig attribute)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.SlurmExecutorConfig.bind_address">(SlurmExecutorConfig attribute)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.TorqueExecutorConfig.bind_address">(TorqueExecutorConfig attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.PriorityEnum.bit_count">bit_count() (PriorityEnum method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.PriorityEnum.bit_length">bit_length() (PriorityEnum method)</a>
+</li>
+      <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LSFExecutorConfig.bsub_redirection">bsub_redirection (LSFExecutorConfig attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="C">C</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.cancel_internal_job">cancel_internal_job() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.cancel_records">cancel_records() (BaseDataset method)</a>
+
+      <ul>
+        <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.cancel_records">(PortalClient method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.cancelled">cancelled (InternalJobStatusEnum attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.cancelled">(RecordStatusEnum attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.capitalize">capitalize() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.capitalize">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.casefold">casefold() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.casefold">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.center">center() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.center">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.change_user_password">change_user_password() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.DeleteMetadata.check_all_indices">check_all_indices() (DeleteMetadata class method)</a>
+
+      <ul>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.InsertMetadata.check_all_indices">(InsertMetadata class method)</a>
+</li>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.UpdateMetadata.check_all_indices">(UpdateMetadata class method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.children_status">children_status (BaseRecord property)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.children_status">(GridoptimizationRecord property)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.children_status">(ManybodyRecord property)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.children_status">(NEBRecord property)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.children_status">(OptimizationRecord property)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.children_status">(ReactionRecord property)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.children_status">(SinglepointRecord property)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.children_status">(TorsiondriveRecord property)</a>
+</li>
+      </ul></li>
+      <li><a href="overview/snowflake.html#qcfractal.snowflake.FractalSnowflake.client">client() (FractalSnowflake method)</a>
+</li>
+      <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.clusters">clusters (ManybodyRecord property)</a>
+</li>
+      <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.clusters_meta_">clusters_meta_ (ManybodyRecord attribute)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.comments">comments (BaseRecord property)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.comments">(GridoptimizationRecord property)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.comments">(ManybodyRecord property)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.comments">(NEBRecord property)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.comments">(OptimizationRecord property)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.comments">(ReactionRecord property)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.comments">(SinglepointRecord property)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.comments">(TorsiondriveRecord property)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.comments_">comments_ (BaseRecord attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.comments_">(GridoptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.comments_">(ManybodyRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.comments_">(NEBRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.comments_">(OptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.comments_">(ReactionRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.comments_">(SinglepointRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.comments_">(TorsiondriveRecord attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.compile_values">compile_values() (BaseDataset method)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.complete">complete (InternalJobStatusEnum attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.complete">(RecordStatusEnum attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.components">components (ReactionRecord property)</a>
+</li>
+      <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.components_meta_">components_meta_ (ReactionRecord attribute)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.compute_history">compute_history (BaseRecord property)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.compute_history">(GridoptimizationRecord property)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.compute_history">(ManybodyRecord property)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.compute_history">(NEBRecord property)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.compute_history">(OptimizationRecord property)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.compute_history">(ReactionRecord property)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.compute_history">(SinglepointRecord property)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.compute_history">(TorsiondriveRecord property)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.compute_history_">compute_history_ (BaseRecord attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.compute_history_">(GridoptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.compute_history_">(ManybodyRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.compute_history_">(NEBRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.compute_history_">(OptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.compute_history_">(ReactionRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.compute_history_">(SinglepointRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.compute_history_">(TorsiondriveRecord attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.computed_properties">computed_properties (BaseDataset property)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.PriorityEnum.conjugate">conjugate() (PriorityEnum method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.contributed_values">contributed_values (BaseDataset property)</a>
+</li>
+      <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LocalExecutorConfig.cores_per_worker">cores_per_worker (LocalExecutorConfig attribute)</a>
+
+      <ul>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LSFExecutorConfig.cores_per_worker">(LSFExecutorConfig attribute)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.SlurmExecutorConfig.cores_per_worker">(SlurmExecutorConfig attribute)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.TorqueExecutorConfig.cores_per_worker">(TorqueExecutorConfig attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.count">count() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.count">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.create_dataset_view">create_dataset_view() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.created_on">created_on (BaseRecord attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.created_on">(GridoptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.created_on">(ManybodyRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.created_on">(NEBRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.created_on">(OptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.created_on">(ReactionRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.created_on">(SinglepointRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.created_on">(TorsiondriveRecord attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobQueryFilters.cursor">cursor (InternalJobQueryFilters attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="D">D</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.dataset_from_cache">dataset_from_cache() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.dataset_type">dataset_type (BaseDataset attribute)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.default_priority">default_priority (BaseDataset attribute)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.default_tag">default_tag (BaseDataset attribute)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.delete_access_log">delete_access_log() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.delete_dataset">delete_dataset() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.delete_entries">delete_entries() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.delete_error_log">delete_error_log() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.delete_group">delete_group() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.delete_internal_job">delete_internal_job() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.delete_molecules">delete_molecules() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.delete_records">delete_records() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.delete_role">delete_role() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.delete_server_stats">delete_server_stats() (PortalClient method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.delete_specification">delete_specification() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.delete_user">delete_user() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.deleted">deleted (RecordStatusEnum attribute)</a>
+</li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.DeleteMetadata.deleted_idx">deleted_idx (DeleteMetadata attribute)</a>
+</li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.DeleteMetadata">DeleteMetadata (class in qcportal.metadata_models)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.PriorityEnum.denominator">denominator (PriorityEnum attribute)</a>
+</li>
+      <li><a href="overview/tasks_services.html#qcportal.record_models.RecordService.dependencies">dependencies (RecordService attribute)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.description">description (BaseDataset attribute)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.detailed_status">detailed_status() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.DeleteMetadata.dict">dict() (DeleteMetadata method)</a>
+
+      <ul>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.InsertMetadata.dict">(InsertMetadata method)</a>
+</li>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.TaskReturnMetadata.dict">(TaskReturnMetadata method)</a>
+</li>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.UpdateMetadata.dict">(UpdateMetadata method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.QCSpecification.driver">driver (QCSpecification attribute)</a>
+</li>
+      <li><a href="overview/snowflake.html#qcfractal.snowflake.FractalSnowflake.dump_database">dump_database() (FractalSnowflake method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="E">E</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.encode">encode() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.encode">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.encoding">encoding (PortalClient property)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJob.ended_date">ended_date (InternalJob attribute)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.endswith">endswith() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.endswith">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.energies">energies (OptimizationRecord attribute)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.entry_names">entry_names (BaseDataset property)</a>
+</li>
+      <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LocalExecutorConfig.environments">environments (LocalExecutorConfig attribute)</a>
+
+      <ul>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LSFExecutorConfig.environments">(LSFExecutorConfig attribute)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.SlurmExecutorConfig.environments">(SlurmExecutorConfig attribute)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.TorqueExecutorConfig.environments">(TorqueExecutorConfig attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.error">error (BaseRecord property)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.error">(GridoptimizationRecord property)</a>
+</li>
+        <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.error">(InternalJobStatusEnum attribute)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.error">(ManybodyRecord property)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.error">(NEBRecord property)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.error">(OptimizationRecord property)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.error">(ReactionRecord property)</a>
+</li>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.error">(RecordStatusEnum attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.error">(SinglepointRecord property)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.error">(TorsiondriveRecord property)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.DeleteMetadata.error_description">error_description (DeleteMetadata attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.InsertMetadata.error_description">(InsertMetadata attribute)</a>
+</li>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.TaskReturnMetadata.error_description">(TaskReturnMetadata attribute)</a>
+</li>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.UpdateMetadata.error_description">(UpdateMetadata attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.DeleteMetadata.error_idx">error_idx (DeleteMetadata property)</a>
+
+      <ul>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.InsertMetadata.error_idx">(InsertMetadata property)</a>
+</li>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.UpdateMetadata.error_idx">(UpdateMetadata property)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.DeleteMetadata.error_string">error_string (DeleteMetadata property)</a>
+
+      <ul>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.InsertMetadata.error_string">(InsertMetadata property)</a>
+</li>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.TaskReturnMetadata.error_string">(TaskReturnMetadata property)</a>
+</li>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.UpdateMetadata.error_string">(UpdateMetadata property)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.DeleteMetadata.errors">errors (DeleteMetadata attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.InsertMetadata.errors">(InsertMetadata attribute)</a>
+</li>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.UpdateMetadata.errors">(UpdateMetadata attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobQueryFilters.exclude">exclude (InternalJobQueryFilters attribute)</a>
+</li>
+      <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.SlurmExecutorConfig.exclusive">exclusive (SlurmExecutorConfig attribute)</a>
+</li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.InsertMetadata.existing_idx">existing_idx (InsertMetadata attribute)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.expandtabs">expandtabs() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.expandtabs">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.Config.extra">extra (GridoptimizationRecord.Config attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationSpecification.Config.extra">(GridoptimizationSpecification.Config attribute)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.Config.extra">(ManybodyRecord.Config attribute)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodySpecification.Config.extra">(ManybodySpecification.Config attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.Config.extra">(NEBRecord.Config attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBSpecification.Config.extra">(NEBSpecification.Config attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.Config.extra">(OptimizationRecord.Config attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationSpecification.Config.extra">(OptimizationSpecification.Config attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.QCSpecification.Config.extra">(QCSpecification.Config attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.Config.extra">(ReactionRecord.Config attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionSpecification.Config.extra">(ReactionSpecification.Config attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.Config.extra">(SinglepointRecord.Config attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.Config.extra">(TorsiondriveRecord.Config attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveSpecification.Config.extra">(TorsiondriveSpecification.Config attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LocalExecutorConfig.extra_executor_options">extra_executor_options (LocalExecutorConfig attribute)</a>
+
+      <ul>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LSFExecutorConfig.extra_executor_options">(LSFExecutorConfig attribute)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.SlurmExecutorConfig.extra_executor_options">(SlurmExecutorConfig attribute)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.TorqueExecutorConfig.extra_executor_options">(TorqueExecutorConfig attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.extras">extras (BaseDataset attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.extras">(BaseRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.extras">(GridoptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.extras">(ManybodyRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.extras">(NEBRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.extras">(OptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.extras">(ReactionRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.extras">(SinglepointRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.extras">(TorsiondriveRecord attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="F">F</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.fetch_children">fetch_children() (BaseRecord method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.fetch_children">(GridoptimizationRecord method)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.fetch_children">(ManybodyRecord method)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.fetch_children">(NEBRecord method)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.fetch_children">(OptimizationRecord method)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.fetch_children">(ReactionRecord method)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.fetch_children">(SinglepointRecord method)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.fetch_children">(TorsiondriveRecord method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.fetch_children_multi">fetch_children_multi() (BaseRecord class method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.fetch_children_multi">(GridoptimizationRecord class method)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.fetch_children_multi">(ManybodyRecord class method)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.fetch_children_multi">(NEBRecord class method)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.fetch_children_multi">(OptimizationRecord class method)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.fetch_children_multi">(ReactionRecord class method)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.fetch_children_multi">(SinglepointRecord class method)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.fetch_children_multi">(TorsiondriveRecord class method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.fetch_contributed_values">fetch_contributed_values() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.fetch_entries">fetch_entries() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.fetch_entry_names">fetch_entry_names() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.fetch_records">fetch_records() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.fetch_specification_names">fetch_specification_names() (BaseDataset method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.fetch_specifications">fetch_specifications() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.final_chain">final_chain (NEBRecord property)</a>
+</li>
+      <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.final_energies">final_energies (GridoptimizationRecord property)</a>
+
+      <ul>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.final_energies">(TorsiondriveRecord property)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.final_molecule">final_molecule (OptimizationRecord property)</a>
+</li>
+      <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.final_molecule_">final_molecule_ (OptimizationRecord attribute)</a>
+</li>
+      <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.final_molecule_id">final_molecule_id (OptimizationRecord attribute)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.find">find() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.find">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="overview/tasks_services.html#qcportal.record_models.RecordService.find_existing">find_existing (RecordService attribute)</a>
+</li>
+      <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationSpecification.force_qcspec">force_qcspec() (OptimizationSpecification class method)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.format">format() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.format">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.format_map">format_map() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.format_map">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="overview/snowflake.html#qcfractal.snowflake.FractalSnowflake">FractalSnowflake (class in qcfractal.snowflake)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.PriorityEnum.from_bytes">from_bytes() (PriorityEnum method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.from_file">from_file() (PortalClient class method)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJob.function">function (InternalJob attribute)</a>
+
+      <ul>
+        <li><a href="overview/tasks_services.html#qcportal.record_models.RecordTask.function">(RecordTask attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="overview/tasks_services.html#qcportal.record_models.RecordTask.function_kwargs">function_kwargs (RecordTask property)</a>
+</li>
+      <li><a href="overview/tasks_services.html#qcportal.record_models.RecordTask.function_kwargs_compressed">function_kwargs_compressed (RecordTask attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="G">G</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.get_dataset">get_dataset() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.get_dataset_by_id">get_dataset_by_id() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.get_dataset_status_by_id">get_dataset_status_by_id() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.get_entry">get_entry() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.get_gridoptimizations">get_gridoptimizations() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.get_group">get_group() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.get_internal_job">get_internal_job() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.get_managers">get_managers() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.get_manybodys">get_manybodys() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.get_molecules">get_molecules() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.get_motd">get_motd() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.get_nebs">get_nebs() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.get_optimizations">get_optimizations() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.get_properties_df">get_properties_df() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.get_reactions">get_reactions() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.get_record">get_record() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.get_records">get_records() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.get_role">get_role() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.get_server_information">get_server_information() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.get_singlepoints">get_singlepoints() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.get_subclass">get_subclass() (BaseDataset class method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.get_subclass">(BaseRecord class method)</a>
+</li>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.get_subclass">(GridoptimizationRecord class method)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.get_subclass">(ManybodyRecord class method)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.get_subclass">(NEBRecord class method)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.get_subclass">(OptimizationRecord class method)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.get_subclass">(ReactionRecord class method)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.get_subclass">(SinglepointRecord class method)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.get_subclass">(TorsiondriveRecord class method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.get_torsiondrives">get_torsiondrives() (PortalClient method)</a>
+</li>
+      <li><a href="overview/snowflake.html#qcfractal.snowflake.FractalSnowflake.get_uri">get_uri() (FractalSnowflake method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.get_user">get_user() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.get_waiting_reason">get_waiting_reason() (BaseRecord method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.get_waiting_reason">(GridoptimizationRecord method)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.get_waiting_reason">(ManybodyRecord method)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.get_waiting_reason">(NEBRecord method)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.get_waiting_reason">(OptimizationRecord method)</a>
+</li>
+        <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.get_waiting_reason">(PortalClient method)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.get_waiting_reason">(ReactionRecord method)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.get_waiting_reason">(SinglepointRecord method)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.get_waiting_reason">(TorsiondriveRecord method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord">GridoptimizationRecord (class in qcportal.gridoptimization)</a>
+</li>
+      <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationSpecification">GridoptimizationSpecification (class in qcportal.gridoptimization)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.group">group (BaseDataset attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="H">H</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.PriorityEnum.high">high (PriorityEnum attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="I">I</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.id">id (BaseDataset attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.id">(BaseRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.id">(GridoptimizationRecord attribute)</a>
+</li>
+        <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJob.id">(InternalJob attribute)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.id">(ManybodyRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.id">(NEBRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.id">(OptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.id">(ReactionRecord attribute)</a>
+</li>
+        <li><a href="overview/tasks_services.html#qcportal.record_models.RecordService.id">(RecordService attribute)</a>
+</li>
+        <li><a href="overview/tasks_services.html#qcportal.record_models.RecordTask.id">(RecordTask attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.id">(SinglepointRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.id">(TorsiondriveRecord attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.PriorityEnum.imag">imag (PriorityEnum attribute)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobQueryFilters.include">include (InternalJobQueryFilters attribute)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.index">index() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.index">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.initial_chain">initial_chain (NEBRecord property)</a>
+</li>
+      <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.initial_chain_">initial_chain_ (NEBRecord attribute)</a>
+</li>
+      <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.initial_chain_molecule_ids_">initial_chain_molecule_ids_ (NEBRecord attribute)</a>
+</li>
+      <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.initial_molecule">initial_molecule (GridoptimizationRecord property)</a>
+
+      <ul>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.initial_molecule">(ManybodyRecord property)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.initial_molecule">(OptimizationRecord property)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.initial_molecule_">initial_molecule_ (GridoptimizationRecord attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.initial_molecule_">(ManybodyRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.initial_molecule_">(OptimizationRecord attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.initial_molecule_id">initial_molecule_id (GridoptimizationRecord attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.initial_molecule_id">(ManybodyRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.initial_molecule_id">(OptimizationRecord attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.initial_molecules">initial_molecules (TorsiondriveRecord property)</a>
+</li>
+      <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.initial_molecules_">initial_molecules_ (TorsiondriveRecord attribute)</a>
+</li>
+      <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.initial_molecules_ids_">initial_molecules_ids_ (TorsiondriveRecord attribute)</a>
+</li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.InsertMetadata.inserted_idx">inserted_idx (InsertMetadata attribute)</a>
+</li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.InsertMetadata">InsertMetadata (class in qcportal.metadata_models)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobQueryIterator">InternalJobQueryIterator (class in qcportal.internal_jobs.models)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum">InternalJobStatusEnum (class in qcportal.internal_jobs.models)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.invalid">invalid (RecordStatusEnum attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.invalidate_records">invalidate_records() (BaseDataset method)</a>
+
+      <ul>
+        <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.invalidate_records">(PortalClient method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.is_service">is_service (BaseRecord attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.is_service">(GridoptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.is_service">(ManybodyRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.is_service">(NEBRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.is_service">(OptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.is_service">(ReactionRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.is_service">(SinglepointRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.is_service">(TorsiondriveRecord attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.is_view">is_view (BaseDataset property)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.isalnum">isalnum() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.isalnum">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.isalpha">isalpha() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.isalpha">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.isascii">isascii() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.isascii">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.isdecimal">isdecimal() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.isdecimal">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.isdigit">isdigit() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.isdigit">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.isidentifier">isidentifier() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.isidentifier">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.islower">islower() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.islower">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.isnumeric">isnumeric() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.isnumeric">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.isprintable">isprintable() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.isprintable">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.isspace">isspace() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.isspace">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.istitle">istitle() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.istitle">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.isupper">isupper() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.isupper">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.iterate_entries">iterate_entries() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.iterate_records">iterate_records() (BaseDataset method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="J">J</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobQueryFilters.job_id">job_id (InternalJobQueryFilters attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.join">join() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.join">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="K">K</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationSpecification.keywords">keywords (GridoptimizationSpecification attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodySpecification.keywords">(ManybodySpecification attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBSpecification.keywords">(NEBSpecification attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationSpecification.keywords">(OptimizationSpecification attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.QCSpecification.keywords">(QCSpecification attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionSpecification.keywords">(ReactionSpecification attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveSpecification.keywords">(TorsiondriveSpecification attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJob.kwargs">kwargs (InternalJob attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="L">L</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJob.last_updated">last_updated (InternalJob attribute)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobQueryFilters.last_updated_after">last_updated_after (InternalJobQueryFilters attribute)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobQueryFilters.last_updated_before">last_updated_before (InternalJobQueryFilters attribute)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobQueryFilters.limit">limit (InternalJobQueryFilters attribute)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.list_datasets">list_datasets() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.list_datasets_table">list_datasets_table() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.list_groups">list_groups() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.list_roles">list_roles() (PortalClient method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.list_users">list_users() (PortalClient method)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.ljust">ljust() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.ljust">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.PriorityEnum.low">low (PriorityEnum attribute)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.lower">lower() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.lower">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.lstrip">lstrip() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.lstrip">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="M">M</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.make_ordered_status">make_ordered_status() (RecordStatusEnum class method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.make_request">make_request() (PortalClient method)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.maketrans">maketrans() (InternalJobStatusEnum static method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.maketrans">(RecordStatusEnum static method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.manager_name">manager_name (BaseRecord attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.manager_name">(GridoptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.manager_name">(ManybodyRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.manager_name">(NEBRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.manager_name">(OptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.manager_name">(ReactionRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.manager_name">(SinglepointRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.manager_name">(TorsiondriveRecord attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord">ManybodyRecord (class in qcportal.manybody)</a>
+</li>
+      <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodySpecification">ManybodySpecification (class in qcportal.manybody)</a>
+</li>
+      <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LSFExecutorConfig.max_nodes">max_nodes (LSFExecutorConfig attribute)</a>
+
+      <ul>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.SlurmExecutorConfig.max_nodes">(SlurmExecutorConfig attribute)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.TorqueExecutorConfig.max_nodes">(TorqueExecutorConfig attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LocalExecutorConfig.max_workers">max_workers (LocalExecutorConfig attribute)</a>
+</li>
+      <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LocalExecutorConfig.memory_per_worker">memory_per_worker (LocalExecutorConfig attribute)</a>
+
+      <ul>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LSFExecutorConfig.memory_per_worker">(LSFExecutorConfig attribute)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.SlurmExecutorConfig.memory_per_worker">(SlurmExecutorConfig attribute)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.TorqueExecutorConfig.memory_per_worker">(TorqueExecutorConfig attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.InsertMetadata.merge">merge() (InsertMetadata static method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.metadata">metadata (BaseDataset attribute)</a>
+</li>
+      <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.QCSpecification.method">method (QCSpecification attribute)</a>
+</li>
+      <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.minimum_optimizations">minimum_optimizations (TorsiondriveRecord property)</a>
+</li>
+      <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.minimum_optimizations_">minimum_optimizations_ (TorsiondriveRecord attribute)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.modified_on">modified_on (BaseRecord attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.modified_on">(GridoptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.modified_on">(ManybodyRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.modified_on">(NEBRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.modified_on">(OptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.modified_on">(ReactionRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.modified_on">(SinglepointRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.modified_on">(TorsiondriveRecord attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.modify_molecule">modify_molecule() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.modify_records">modify_records() (BaseDataset method)</a>
+
+      <ul>
+        <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.modify_records">(PortalClient method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.modify_role">modify_role() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.modify_user">modify_user() (PortalClient method)</a>
+</li>
+      <li>
+    module
+
+      <ul>
+        <li><a href="admin_guide/monitoring.html#module-qcportal.internal_jobs.models">qcportal.internal_jobs.models</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.molecule">molecule (SinglepointRecord property)</a>
+</li>
+      <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.molecule_">molecule_ (SinglepointRecord attribute)</a>
+</li>
+      <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.molecule_id">molecule_id (SinglepointRecord attribute)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.molecules.models.MoleculeQueryIterator">MoleculeQueryIterator (class in qcportal.molecules.models)</a>, <a href="user_guide/query_iterators.html#qcportal.molecules.models.MoleculeQueryIterator">[1]</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="N">N</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.TaskReturnMetadata.n_accepted">n_accepted (TaskReturnMetadata property)</a>
+</li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.DeleteMetadata.n_children_deleted">n_children_deleted (DeleteMetadata attribute)</a>
+</li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.UpdateMetadata.n_children_updated">n_children_updated (UpdateMetadata attribute)</a>
+</li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.DeleteMetadata.n_deleted">n_deleted (DeleteMetadata property)</a>
+</li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.DeleteMetadata.n_errors">n_errors (DeleteMetadata property)</a>
+
+      <ul>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.InsertMetadata.n_errors">(InsertMetadata property)</a>
+</li>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.UpdateMetadata.n_errors">(UpdateMetadata property)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.InsertMetadata.n_existing">n_existing (InsertMetadata property)</a>
+</li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.InsertMetadata.n_inserted">n_inserted (InsertMetadata property)</a>
+</li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.TaskReturnMetadata.n_rejected">n_rejected (TaskReturnMetadata property)</a>
+</li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.UpdateMetadata.n_updated">n_updated (UpdateMetadata property)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.name">name (BaseDataset attribute)</a>
+
+      <ul>
+        <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJob.name">(InternalJob attribute)</a>
+</li>
+        <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobQueryFilters.name">(InternalJobQueryFilters attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.native_files">native_files (BaseRecord property)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.native_files">(GridoptimizationRecord property)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.native_files">(ManybodyRecord property)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.native_files">(NEBRecord property)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.native_files">(OptimizationRecord property)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.native_files">(ReactionRecord property)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.native_files">(SinglepointRecord property)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.native_files">(TorsiondriveRecord property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.native_files_">native_files_ (BaseRecord attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.native_files_">(GridoptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.native_files_">(ManybodyRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.native_files_">(NEBRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.native_files_">(OptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.native_files_">(ReactionRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.native_files_">(SinglepointRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.native_files_">(TorsiondriveRecord attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.neb_result_">neb_result_ (NEBRecord attribute)</a>
+</li>
+      <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord">NEBRecord (class in qcportal.neb)</a>
+</li>
+      <li><a href="user_guide/records/neb.html#qcportal.neb.NEBSpecification">NEBSpecification (class in qcportal.neb)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.PriorityEnum.normal">normal (PriorityEnum attribute)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.PriorityEnum.numerator">numerator (PriorityEnum attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="O">O</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.offline">offline (BaseDataset property)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.offline">(BaseRecord property)</a>
+</li>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.offline">(GridoptimizationRecord property)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.offline">(ManybodyRecord property)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.offline">(NEBRecord property)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.offline">(OptimizationRecord property)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.offline">(ReactionRecord property)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.offline">(SinglepointRecord property)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.offline">(TorsiondriveRecord property)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationSpecification.optimization_specification">optimization_specification (GridoptimizationSpecification attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBSpecification.optimization_specification">(NEBSpecification attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionSpecification.optimization_specification">(ReactionSpecification attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveSpecification.optimization_specification">(TorsiondriveSpecification attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord">OptimizationRecord (class in qcportal.optimization)</a>
+</li>
+      <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.optimizations">optimizations (GridoptimizationRecord property)</a>
+
+      <ul>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.optimizations">(NEBRecord property)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.optimizations">(TorsiondriveRecord property)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.optimizations_">optimizations_ (GridoptimizationRecord attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.optimizations_">(NEBRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.optimizations_">(TorsiondriveRecord attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationSpecification">OptimizationSpecification (class in qcportal.optimization)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.owner_group">owner_group (BaseDataset attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.owner_group">(BaseRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.owner_group">(GridoptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.owner_group">(ManybodyRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.owner_group">(NEBRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.owner_group">(OptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.owner_group">(ReactionRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.owner_group">(SinglepointRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.owner_group">(TorsiondriveRecord attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.owner_user">owner_user (BaseDataset attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.owner_user">(BaseRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.owner_user">(GridoptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.owner_user">(ManybodyRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.owner_user">(NEBRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.owner_user">(OptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.owner_user">(ReactionRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.owner_user">(SinglepointRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.owner_user">(TorsiondriveRecord attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="P">P</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobQueryFilters.parse_dates">parse_dates() (InternalJobQueryFilters class method)</a>
+</li>
+      <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.SlurmExecutorConfig.partition">partition (SlurmExecutorConfig attribute)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.partition">partition() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.partition">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.ping">ping() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient">PortalClient (class in qcportal.client)</a>
+</li>
+      <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.preoptimization">preoptimization (GridoptimizationRecord property)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.print_datasets_table">print_datasets_table() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.print_status">print_status() (BaseDataset method)</a>
+</li>
+      <li><a href="overview/tasks_services.html#qcportal.record_models.RecordService.priority">priority (RecordService attribute)</a>
+
+      <ul>
+        <li><a href="overview/tasks_services.html#qcportal.record_models.RecordTask.priority">(RecordTask attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.PriorityEnum">PriorityEnum (class in qcportal.record_models)</a>
+</li>
+      <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationSpecification.program">program (GridoptimizationSpecification attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodySpecification.program">(ManybodySpecification attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBSpecification.program">(NEBSpecification attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationSpecification.program">(OptimizationSpecification attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.QCSpecification.program">(QCSpecification attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionSpecification.program">(ReactionSpecification attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveSpecification.program">(TorsiondriveSpecification attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJob.progress">progress (InternalJob attribute)</a>
+</li>
+      <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LSFExecutorConfig.project">project (LSFExecutorConfig attribute)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.propagate_client">propagate_client() (BaseDataset method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.propagate_client">(BaseRecord method)</a>
+</li>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.propagate_client">(GridoptimizationRecord method)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.propagate_client">(ManybodyRecord method)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.propagate_client">(NEBRecord method)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.propagate_client">(OptimizationRecord method)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.propagate_client">(ReactionRecord method)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.propagate_client">(SinglepointRecord method)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.propagate_client">(TorsiondriveRecord method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.properties">properties (BaseRecord attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.properties">(GridoptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.properties">(ManybodyRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.properties">(NEBRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.properties">(OptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.properties">(ReactionRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.properties">(SinglepointRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.properties">(TorsiondriveRecord attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationSpecification.protocols">protocols (OptimizationSpecification attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.QCSpecification.protocols">(QCSpecification attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.provenance">provenance (BaseDataset attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.provenance">(BaseRecord property)</a>
+</li>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.provenance">(GridoptimizationRecord property)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.provenance">(ManybodyRecord property)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.provenance">(NEBRecord property)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.provenance">(OptimizationRecord property)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.provenance">(ReactionRecord property)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.provenance">(SinglepointRecord property)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.provenance">(TorsiondriveRecord property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="Q">Q</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationSpecification.qc_specification">qc_specification (OptimizationSpecification attribute)</a>
+</li>
+      <li>
+    qcportal.internal_jobs.models
+
+      <ul>
+        <li><a href="admin_guide/monitoring.html#module-qcportal.internal_jobs.models">module</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.QCSpecification">QCSpecification (class in qcportal.singlepoint)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.query_access_log">query_access_log() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.query_access_summary">query_access_summary() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.query_dataset_records">query_dataset_records() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.query_error_log">query_error_log() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.query_gridoptimizations">query_gridoptimizations() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.query_internal_jobs">query_internal_jobs() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.query_managers">query_managers() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.query_manybodys">query_manybodys() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.query_molecules">query_molecules() (PortalClient method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.query_nebs">query_nebs() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.query_optimizations">query_optimizations() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.query_reactions">query_reactions() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.query_records">query_records() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.query_server_stats">query_server_stats() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.query_singlepoints">query_singlepoints() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.query_torsiondrives">query_torsiondrives() (PortalClient method)</a>
+</li>
+      <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LSFExecutorConfig.queue">queue (LSFExecutorConfig attribute)</a>
+
+      <ul>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.TorqueExecutorConfig.queue">(TorqueExecutorConfig attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LocalExecutorConfig.queue_tags">queue_tags (LocalExecutorConfig attribute)</a>
+
+      <ul>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LSFExecutorConfig.queue_tags">(LSFExecutorConfig attribute)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.SlurmExecutorConfig.queue_tags">(SlurmExecutorConfig attribute)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.TorqueExecutorConfig.queue_tags">(TorqueExecutorConfig attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="R">R</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord">ReactionRecord (class in qcportal.reaction)</a>
+</li>
+      <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionSpecification">ReactionSpecification (class in qcportal.reaction)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.PriorityEnum.real">real (PriorityEnum attribute)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.record_count">record_count (BaseDataset property)</a>
+</li>
+      <li><a href="overview/tasks_services.html#qcportal.record_models.RecordService.record_id">record_id (RecordService attribute)</a>
+
+      <ul>
+        <li><a href="overview/tasks_services.html#qcportal.record_models.RecordTask.record_id">(RecordTask attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.record_type">record_type (BaseRecord attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.record_type">(GridoptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.record_type">(ManybodyRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.record_type">(NEBRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.record_type">(OptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.record_type">(ReactionRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.record_type">(SinglepointRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.record_type">(TorsiondriveRecord attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/query_iterators.html#qcportal.record_models.RecordQueryIterator">RecordQueryIterator (class in qcportal.record_models)</a>, <a href="user_guide/records/base.html#qcportal.record_models.RecordQueryIterator">[1]</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum">RecordStatusEnum (class in qcportal.record_models)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.refresh_cache">refresh_cache() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.TaskReturnMetadata.rejected_ids">rejected_ids (TaskReturnMetadata property)</a>
+</li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.TaskReturnMetadata.rejected_info">rejected_info (TaskReturnMetadata attribute)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.remove_records">remove_records() (BaseDataset method)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.removeprefix">removeprefix() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.removeprefix">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.removesuffix">removesuffix() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.removesuffix">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.rename_entries">rename_entries() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.rename_specification">rename_specification() (BaseDataset method)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.replace">replace() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.replace">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LSFExecutorConfig.request_by_nodes">request_by_nodes (LSFExecutorConfig attribute)</a>
+</li>
+      <li><a href="overview/tasks_services.html#qcportal.record_models.RecordTask.required_programs">required_programs (RecordTask attribute)</a>
+</li>
+      <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionSpecification.required_spec">required_spec() (ReactionSpecification class method)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobQueryIterator.reset">reset() (InternalJobQueryIterator method)</a>
+
+      <ul>
+        <li><a href="user_guide/qcportal_reference.html#qcportal.molecules.models.MoleculeQueryIterator.reset">(MoleculeQueryIterator method)</a>, <a href="user_guide/query_iterators.html#qcportal.molecules.models.MoleculeQueryIterator.reset">[1]</a>
+</li>
+        <li><a href="user_guide/query_iterators.html#qcportal.record_models.RecordQueryIterator.reset">(RecordQueryIterator method)</a>, <a href="user_guide/records/base.html#qcportal.record_models.RecordQueryIterator.reset">[1]</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.reset_records">reset_records() (BaseDataset method)</a>
+
+      <ul>
+        <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.reset_records">(PortalClient method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJob.result">result (InternalJob attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.result">(NEBRecord property)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.results">results (ManybodyRecord attribute)</a>
+</li>
+      <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.return_result">return_result (SinglepointRecord property)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.rfind">rfind() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.rfind">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.rindex">rindex() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.rindex">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.rjust">rjust() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.rjust">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.rpartition">rpartition() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.rpartition">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.rsplit">rsplit() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.rsplit">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.rstrip">rstrip() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.rstrip">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJob.runner_hostname">runner_hostname (InternalJob attribute)</a>
+
+      <ul>
+        <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobQueryFilters.runner_hostname">(InternalJobQueryFilters attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJob.runner_uuid">runner_uuid (InternalJob attribute)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.running">running (InternalJobStatusEnum attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.running">(RecordStatusEnum attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobQueryFilters.scheduled_after">scheduled_after (InternalJobQueryFilters attribute)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobQueryFilters.scheduled_before">scheduled_before (InternalJobQueryFilters attribute)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJob.scheduled_date">scheduled_date (InternalJob attribute)</a>
+</li>
+      <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LSFExecutorConfig.scheduler_options">scheduler_options (LSFExecutorConfig attribute)</a>
+
+      <ul>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.SlurmExecutorConfig.scheduler_options">(SlurmExecutorConfig attribute)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.TorqueExecutorConfig.scheduler_options">(TorqueExecutorConfig attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LocalExecutorConfig.scratch_directory">scratch_directory (LocalExecutorConfig attribute)</a>
+
+      <ul>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LSFExecutorConfig.scratch_directory">(LSFExecutorConfig attribute)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.SlurmExecutorConfig.scratch_directory">(SlurmExecutorConfig attribute)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.TorqueExecutorConfig.scratch_directory">(TorqueExecutorConfig attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.service">service (BaseRecord property)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.service">(GridoptimizationRecord property)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.service">(ManybodyRecord property)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.service">(NEBRecord property)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.service">(OptimizationRecord property)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.service">(ReactionRecord property)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.service">(SinglepointRecord property)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.service">(TorsiondriveRecord property)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.service_">service_ (BaseRecord attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.service_">(GridoptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.service_">(ManybodyRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.service_">(NEBRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.service_">(OptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.service_">(ReactionRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.service_">(SinglepointRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.service_">(TorsiondriveRecord attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="overview/tasks_services.html#qcportal.record_models.RecordService.service_state">service_state (RecordService attribute)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.set_default_priority">set_default_priority() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.set_default_tag">set_default_tag() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.set_description">set_description() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.set_group">set_group() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.set_metadata">set_metadata() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.set_motd">set_motd() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.set_name">set_name() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.set_provenance">set_provenance() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.set_tagline">set_tagline() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.set_tags">set_tags() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.set_visibility">set_visibility() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodySpecification.singlepoint_specification">singlepoint_specification (ManybodySpecification attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBSpecification.singlepoint_specification">(NEBSpecification attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionSpecification.singlepoint_specification">(ReactionSpecification attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord">SinglepointRecord (class in qcportal.singlepoint)</a>
+</li>
+      <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.singlepoints">singlepoints (NEBRecord property)</a>
+</li>
+      <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.singlepoints_">singlepoints_ (NEBRecord attribute)</a>
+</li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.DeleteMetadata.sort_fields">sort_fields() (DeleteMetadata class method)</a>
+
+      <ul>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.InsertMetadata.sort_fields">(InsertMetadata class method)</a>
+</li>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.TaskReturnMetadata.sort_fields">(TaskReturnMetadata class method)</a>
+</li>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.UpdateMetadata.sort_fields">(UpdateMetadata class method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.specification">specification (GridoptimizationRecord attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.specification">(ManybodyRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.specification">(NEBRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.specification">(OptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.specification">(ReactionRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.specification">(SinglepointRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.specification">(TorsiondriveRecord attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.specification_names">specification_names (BaseDataset property)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.specifications">specifications (BaseDataset property)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.split">split() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.split">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.splitlines">splitlines() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.splitlines">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="overview/snowflake.html#qcfractal.snowflake.FractalSnowflake.start">start() (FractalSnowflake method)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJob.started_date">started_date (InternalJob attribute)</a>
+</li>
+      <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.starting_grid">starting_grid (GridoptimizationRecord attribute)</a>
+</li>
+      <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.starting_molecule">starting_molecule (GridoptimizationRecord property)</a>
+</li>
+      <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.starting_molecule_">starting_molecule_ (GridoptimizationRecord attribute)</a>
+</li>
+      <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.starting_molecule_id">starting_molecule_id (GridoptimizationRecord attribute)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.startswith">startswith() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.startswith">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.status">status (BaseRecord attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.status">(GridoptimizationRecord attribute)</a>
+</li>
+        <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJob.status">(InternalJob attribute)</a>
+</li>
+        <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobQueryFilters.status">(InternalJobQueryFilters attribute)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.status">(ManybodyRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.status">(NEBRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.status">(OptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.status">(ReactionRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.status">(SinglepointRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.status">(TorsiondriveRecord attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.status">status() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.status_table">status_table() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.stderr">stderr (BaseRecord property)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.stderr">(GridoptimizationRecord property)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.stderr">(ManybodyRecord property)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.stderr">(NEBRecord property)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.stderr">(OptimizationRecord property)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.stderr">(ReactionRecord property)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.stderr">(SinglepointRecord property)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.stderr">(TorsiondriveRecord property)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.stdout">stdout (BaseRecord property)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.stdout">(GridoptimizationRecord property)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.stdout">(ManybodyRecord property)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.stdout">(NEBRecord property)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.stdout">(OptimizationRecord property)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.stdout">(ReactionRecord property)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.stdout">(SinglepointRecord property)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.stdout">(TorsiondriveRecord property)</a>
+</li>
+      </ul></li>
+      <li><a href="overview/snowflake.html#qcfractal.snowflake.FractalSnowflake.stop">stop() (FractalSnowflake method)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.strip">strip() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.strip">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.submit">submit() (BaseDataset method)</a>
+</li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.DeleteMetadata.success">success (DeleteMetadata property)</a>
+
+      <ul>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.InsertMetadata.success">(InsertMetadata property)</a>
+</li>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.TaskReturnMetadata.success">(TaskReturnMetadata property)</a>
+</li>
+        <li><a href="user_guide/metadata.html#qcportal.metadata_models.UpdateMetadata.success">(UpdateMetadata property)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.swapcase">swapcase() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.swapcase">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.sync_to_cache">sync_to_cache() (BaseRecord method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.sync_to_cache">(GridoptimizationRecord method)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.sync_to_cache">(ManybodyRecord method)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.sync_to_cache">(NEBRecord method)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.sync_to_cache">(OptimizationRecord method)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.sync_to_cache">(ReactionRecord method)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.sync_to_cache">(SinglepointRecord method)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.sync_to_cache">(TorsiondriveRecord method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="T">T</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="overview/tasks_services.html#qcportal.record_models.RecordService.tag">tag (RecordService attribute)</a>
+
+      <ul>
+        <li><a href="overview/tasks_services.html#qcportal.record_models.RecordTask.tag">(RecordTask attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.tagline">tagline (BaseDataset attribute)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.tags">tags (BaseDataset attribute)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.task">task (BaseRecord property)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.task">(GridoptimizationRecord property)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.task">(ManybodyRecord property)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.task">(NEBRecord property)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.task">(OptimizationRecord property)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.task">(ReactionRecord property)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.task">(SinglepointRecord property)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.task">(TorsiondriveRecord property)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.BaseRecord.task_">task_ (BaseRecord attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.task_">(GridoptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.task_">(ManybodyRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.task_">(NEBRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.task_">(OptimizationRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.task_">(ReactionRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.task_">(SinglepointRecord attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.task_">(TorsiondriveRecord attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.TaskReturnMetadata">TaskReturnMetadata (class in qcportal.metadata_models)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.title">title() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.title">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/base.html#qcportal.record_models.PriorityEnum.to_bytes">to_bytes() (PriorityEnum method)</a>
+</li>
+      <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.to_qcschema_result">to_qcschema_result() (OptimizationRecord method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.to_qcschema_result">(SinglepointRecord method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord">TorsiondriveRecord (class in qcportal.torsiondrive)</a>
+</li>
+      <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveSpecification">TorsiondriveSpecification (class in qcportal.torsiondrive)</a>
+</li>
+      <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.total_energy">total_energy (ReactionRecord attribute)</a>
+</li>
+      <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.trajectory">trajectory (OptimizationRecord property)</a>
+</li>
+      <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.trajectory_element">trajectory_element() (OptimizationRecord method)</a>
+</li>
+      <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.trajectory_ids_">trajectory_ids_ (OptimizationRecord attribute)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.translate">translate() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.translate">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.ts_hessian">ts_hessian (NEBRecord property)</a>
+</li>
+      <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.ts_optimization">ts_optimization (NEBRecord property)</a>
+</li>
+      <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LocalExecutorConfig.type">type (LocalExecutorConfig attribute)</a>
+
+      <ul>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LSFExecutorConfig.type">(LSFExecutorConfig attribute)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.SlurmExecutorConfig.type">(SlurmExecutorConfig attribute)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.TorqueExecutorConfig.type">(TorqueExecutorConfig attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="U">U</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.uncancel_records">uncancel_records() (BaseDataset method)</a>
+
+      <ul>
+        <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.uncancel_records">(PortalClient method)</a>
+</li>
+      </ul></li>
+      <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.undelete_records">undelete_records() (PortalClient method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.uninvalidate_records">uninvalidate_records() (BaseDataset method)</a>
+
+      <ul>
+        <li><a href="user_guide/qcportal_reference.html#qcportal.client.PortalClient.uninvalidate_records">(PortalClient method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.UpdateMetadata.updated_idx">updated_idx (UpdateMetadata attribute)</a>
+</li>
+      <li><a href="user_guide/metadata.html#qcportal.metadata_models.UpdateMetadata">UpdateMetadata (class in qcportal.metadata_models)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.upper">upper() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.upper">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJob.user">user (InternalJob attribute)</a>
+
+      <ul>
+        <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobQueryFilters.user">(InternalJobQueryFilters attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="V">V</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/records/gridoptimization.html#qcportal.gridoptimization.GridoptimizationRecord.Config.validate_assignment">validate_assignment (GridoptimizationRecord.Config attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/manybody.html#qcportal.manybody.ManybodyRecord.Config.validate_assignment">(ManybodyRecord.Config attribute)</a>
+</li>
+        <li><a href="user_guide/records/neb.html#qcportal.neb.NEBRecord.Config.validate_assignment">(NEBRecord.Config attribute)</a>
+</li>
+        <li><a href="user_guide/records/optimization.html#qcportal.optimization.OptimizationRecord.Config.validate_assignment">(OptimizationRecord.Config attribute)</a>
+</li>
+        <li><a href="user_guide/records/reaction.html#qcportal.reaction.ReactionRecord.Config.validate_assignment">(ReactionRecord.Config attribute)</a>
+</li>
+        <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.Config.validate_assignment">(SinglepointRecord.Config attribute)</a>
+</li>
+        <li><a href="user_guide/records/torsiondrive.html#qcportal.torsiondrive.TorsiondriveRecord.Config.validate_assignment">(TorsiondriveRecord.Config attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobQueryFilters.validate_lists">validate_lists() (InternalJobQueryFilters class method)</a>
+</li>
+      <li><a href="user_guide/records/base.html#qcportal.dataset_models.BaseDataset.visibility">visibility (BaseDataset attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="W">W</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="overview/snowflake.html#qcfractal.snowflake.FractalSnowflake.wait_for_api">wait_for_api() (FractalSnowflake method)</a>
+</li>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.waiting">waiting (InternalJobStatusEnum attribute)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.waiting">(RecordStatusEnum attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LSFExecutorConfig.walltime">walltime (LSFExecutorConfig attribute)</a>
+
+      <ul>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.SlurmExecutorConfig.walltime">(SlurmExecutorConfig attribute)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.TorqueExecutorConfig.walltime">(TorqueExecutorConfig attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LSFExecutorConfig.walltime_must_be_str">walltime_must_be_str() (LSFExecutorConfig class method)</a>
+
+      <ul>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.SlurmExecutorConfig.walltime_must_be_str">(SlurmExecutorConfig class method)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.TorqueExecutorConfig.walltime_must_be_str">(TorqueExecutorConfig class method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.wavefunction">wavefunction (SinglepointRecord property)</a>
+</li>
+      <li><a href="user_guide/records/singlepoint.html#qcportal.singlepoint.SinglepointRecord.wavefunction_">wavefunction_ (SinglepointRecord attribute)</a>
+</li>
+      <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LocalExecutorConfig.worker_init">worker_init (LocalExecutorConfig attribute)</a>
+
+      <ul>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LSFExecutorConfig.worker_init">(LSFExecutorConfig attribute)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.SlurmExecutorConfig.worker_init">(SlurmExecutorConfig attribute)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.TorqueExecutorConfig.worker_init">(TorqueExecutorConfig attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.LSFExecutorConfig.workers_per_node">workers_per_node (LSFExecutorConfig attribute)</a>
+
+      <ul>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.SlurmExecutorConfig.workers_per_node">(SlurmExecutorConfig attribute)</a>
+</li>
+        <li><a href="admin_guide/managers/index.html#qcfractalcompute.config.TorqueExecutorConfig.workers_per_node">(TorqueExecutorConfig attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="Z">Z</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="admin_guide/monitoring.html#qcportal.internal_jobs.models.InternalJobStatusEnum.zfill">zfill() (InternalJobStatusEnum method)</a>
+
+      <ul>
+        <li><a href="user_guide/records/base.html#qcportal.record_models.RecordStatusEnum.zfill">(RecordStatusEnum method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+<div class="row h-10">
+    <div class="col-2">
+        <a href="https://molssi.org/" target="_blank" title="Go to MolSSI in a new tab">
+            <img src="_static/molssi_main_logo.png" class="logo__image only-light footer_logo" alt="Logo image">
+            <img src="_static/molssi_main_logo_inverted_white.png" class="logo__image only-dark footer_logo" alt="Logo image">
+        </a>
+    </div>
+    <div class="col-8">
+        <p> &copy; Copyright 2019-2023 <a href="https://molssi.org/">The Molecular Sciences Software Institute</a></p>
+        <p>Funded by the National Science Foundation 
+          <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1547580">OAC-1547580</a> and 
+          <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2136142">CHE-2136142.</a></p>
+ 
+        
+        <p class="sphinx-version">
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.3.7.<br>
+        </p>
+        
+
+        <p class="theme-version">
+        Built with a customized <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.2.
+        </p>
+
+    </div>
+    <div class="col-2">
+        <a href="https://nsf.gov/" target="_blank" title="Go to the NSF in a new tab">
+            <img src="_static/nsf.png" class="footer_logo" alt="The NSF">
+          </a>
+    </div>
+</div></div>
+      
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+  </body>
+</html>

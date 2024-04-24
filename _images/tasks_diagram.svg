@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="36cm" height="5cm" viewBox="126 217 707 81" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #78c444" x="128" y="226.334" width="146" height="64.3333"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="128" y="226.334" width="146" height="64.3333"/>
+    <text font-size="16.9333" style="fill: #ffffff;text-anchor:middle;font-family:DINCond-Bold;font-style:normal;font-weight:500" x="201" y="253.675">
+      <tspan x="201" y="253.675">Client</tspan>
+      <tspan x="201" y="274.841">(QCPortal)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ca611f" x="686.4" y="226.334" width="146" height="64.3333"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="686.4" y="226.334" width="146" height="64.3333"/>
+    <text font-size="16.9333" style="fill: #ffffff;text-anchor:middle;font-family:DINCond-Bold;font-style:normal;font-weight:500" x="759.4" y="253.675">
+      <tspan x="759.4" y="253.675">Manager</tspan>
+      <tspan x="759.4" y="274.841">(QCFractalCompute)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #000099" x="407.2" y="226.334" width="146" height="64.3333"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="407.2" y="226.334" width="146" height="64.3333"/>
+    <text font-size="16.9333" style="fill: #ffffff;text-anchor:middle;font-family:DINCond-Bold;font-style:normal;font-weight:500" x="480.2" y="253.675">
+      <tspan x="480.2" y="253.675">Server</tspan>
+      <tspan x="480.2" y="274.841">(QCFractal)</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="273.382" y1="242.416" x2="396.846" y2="242.416"/>
+    <polygon style="fill: #000000" points="404.346,242.416 394.346,247.416 396.846,242.416 394.346,237.416 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="404.346,242.416 394.346,247.416 396.846,242.416 394.346,237.416 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="407.818" y1="274.584" x2="284.354" y2="274.584"/>
+    <polygon style="fill: #000000" points="276.854,274.584 286.854,269.584 284.354,274.584 286.854,279.584 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="276.854,274.584 286.854,269.584 284.354,274.584 286.854,279.584 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="553.2" y1="242.416" x2="676.664" y2="242.416"/>
+    <polygon style="fill: #000000" points="684.164,242.416 674.164,247.416 676.664,242.416 674.164,237.416 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="684.164,242.416 674.164,247.416 676.664,242.416 674.164,237.416 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="562.936" y1="274.584" x2="686.4" y2="274.584"/>
+    <polygon style="fill: #000000" points="555.436,274.584 565.436,269.584 562.936,274.584 565.436,279.584 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="555.436,274.584 565.436,269.584 562.936,274.584 565.436,279.584 "/>
+  </g>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:DINCond-Bold;font-style:normal;font-weight:500" x="319.55" y="237.35">
+    <tspan x="319.55" y="237.35">Inputs</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:DINCond-Bold;font-style:normal;font-weight:500" x="313.776" y="295.064">
+    <tspan x="313.776" y="295.064">Records</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:DINCond-Bold;font-style:normal;font-weight:500" x="601.544" y="237.064">
+    <tspan x="601.544" y="237.064">Tasks</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:DINCond-Bold;font-style:normal;font-weight:500" x="595.168" y="295.064">
+    <tspan x="595.168" y="295.064">Results</tspan>
+  </text>
+</svg>

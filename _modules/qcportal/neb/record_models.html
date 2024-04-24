@@ -1,0 +1,853 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>qcportal.neb.record_models &#8212; QCArchive 0.50.post249+gca892bad documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/autodoc_pydantic.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=3f4ed3ce" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../../../_static/documentation_options.js?v=a0fbfd44"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/design-tabs.js?v=36754332"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/qcportal/neb/record_models';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/qcarchive_logo.svg" class="logo__image only-light" alt=""/>
+    <script>document.write(`<img src="../../../_static/qcarchive_logo_inverted.svg" class="logo__image only-dark" alt=""/>`);</script>
+  
+  
+    <p class="title logo__title">QCArchive</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../quickstart/index.html">
+                        Quickstart
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../overview/index.html">
+                        Overview
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../user_guide/index.html">
+                        User Guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../release_notes.html">
+                        Release Notes
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../admin_guide/index.html">
+                        Admin Guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../web_api/index.html">
+                        Web API
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../developer_guide/index.html">
+                        Developer Guide
+                      </a>
+                    </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://molssi.org">
+                    MolSSI
+                  </a>
+                </li>
+                
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/MolSSI/QCFractal" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../quickstart/index.html">
+                        Quickstart
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../overview/index.html">
+                        Overview
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../user_guide/index.html">
+                        User Guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../release_notes.html">
+                        Release Notes
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../admin_guide/index.html">
+                        Admin Guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../web_api/index.html">
+                        Web API
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../developer_guide/index.html">
+                        Developer Guide
+                      </a>
+                    </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://molssi.org">
+                    MolSSI
+                  </a>
+                </li>
+                
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/MolSSI/QCFractal" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Module code</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">qcportal.neb...</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <h1>Source code for qcportal.neb.record_models</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">annotations</span>
+
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Union</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Iterable</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">pydantic.v1</span> <span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">Field</span><span class="p">,</span> <span class="n">Extra</span><span class="p">,</span> <span class="n">root_validator</span><span class="p">,</span> <span class="n">constr</span><span class="p">,</span> <span class="n">validator</span><span class="p">,</span> <span class="n">PrivateAttr</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">Field</span><span class="p">,</span> <span class="n">Extra</span><span class="p">,</span> <span class="n">root_validator</span><span class="p">,</span> <span class="n">constr</span><span class="p">,</span> <span class="n">validator</span><span class="p">,</span> <span class="n">PrivateAttr</span>
+<span class="kn">from</span> <span class="nn">typing_extensions</span> <span class="kn">import</span> <span class="n">Literal</span>
+
+<span class="kn">from</span> <span class="nn">qcportal.cache</span> <span class="kn">import</span> <span class="n">get_records_with_cache</span>
+<span class="kn">from</span> <span class="nn">qcportal.molecules</span> <span class="kn">import</span> <span class="n">Molecule</span>
+<span class="kn">from</span> <span class="nn">qcportal.record_models</span> <span class="kn">import</span> <span class="n">BaseRecord</span><span class="p">,</span> <span class="n">RecordAddBodyBase</span><span class="p">,</span> <span class="n">RecordQueryFilters</span>
+<span class="kn">from</span> <span class="nn">qcportal.utils</span> <span class="kn">import</span> <span class="n">recursive_normalizer</span>
+<span class="kn">from</span> <span class="nn">..optimization.record_models</span> <span class="kn">import</span> <span class="n">OptimizationRecord</span><span class="p">,</span> <span class="n">OptimizationSpecification</span>
+<span class="kn">from</span> <span class="nn">..singlepoint.record_models</span> <span class="kn">import</span> <span class="n">QCSpecification</span><span class="p">,</span> <span class="n">SinglepointRecord</span>
+
+
+<span class="k">class</span> <span class="nc">NEBKeywords</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    NEBRecord options</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
+        <span class="n">extra</span> <span class="o">=</span> <span class="n">Extra</span><span class="o">.</span><span class="n">forbid</span>
+
+    <span class="n">images</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="mi">11</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Number of images that will be used to locate a rough transition state structure.&quot;</span><span class="p">,</span>
+        <span class="n">gt</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">spring_constant</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="mf">1.0</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Spring constant in kcal/mol/Ang^2.&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">spring_type</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="mi">0</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;0: Nudged Elastic Band (parallel spring force + perpendicular gradients)</span><span class="se">\n</span><span class="s2">&quot;</span>
+        <span class="s2">&quot;1: Hybrid Elastic Band (full spring force + perpendicular gradients)</span><span class="se">\n</span><span class="s2">&quot;</span>
+        <span class="s2">&quot;2: Plain Elastic Band (full spring force + full gradients)</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">maximum_force</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="mf">0.05</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Convergence criteria. Converge when maximum RMS-gradient (ev/Ang) of the chain fall below maximum_force.&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">average_force</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="mf">0.025</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Convergence criteria. Converge when average RMS-gradient (ev/Ang) of the chain fall below average_force.&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">maximum_cycle</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Maximum iteration number for NEB calculation.&quot;</span><span class="p">)</span>
+
+    <span class="n">optimize_ts</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="kc">False</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Setting it equal to true will perform a transition sate optimization starting with the guessed transition state structure from the NEB calculation result.&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">optimize_endpoints</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="kc">False</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Setting it equal to True will optimize two end points of the initial chain before starting NEB.&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">align</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Align the images before starting the NEB calculation.&quot;</span><span class="p">)</span>
+
+    <span class="n">epsilon</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="mf">1e-5</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Small eigenvalue threshold for resetting Hessian.&quot;</span><span class="p">)</span>
+
+    <span class="n">hessian_reset</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="kc">True</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Reset Hessian when eigenvalues are below the epsilon.&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="nd">@root_validator</span>
+    <span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">recursive_normalizer</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="NEBSpecification">
+<a class="viewcode-back" href="../../../user_guide/records/neb.html#qcportal.neb.NEBSpecification">[docs]</a>
+<span class="k">class</span> <span class="nc">NEBSpecification</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<div class="viewcode-block" id="NEBSpecification.Config">
+<a class="viewcode-back" href="../../../user_guide/records/neb.html#qcportal.neb.NEBSpecification.Config">[docs]</a>
+    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
+        <span class="n">extra</span> <span class="o">=</span> <span class="n">Extra</span><span class="o">.</span><span class="n">forbid</span></div>
+
+
+    <span class="n">program</span><span class="p">:</span> <span class="n">constr</span><span class="p">(</span><span class="n">to_lower</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="o">=</span> <span class="s2">&quot;geometric&quot;</span>
+    <span class="n">singlepoint_specification</span><span class="p">:</span> <span class="n">QCSpecification</span>
+    <span class="n">optimization_specification</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">OptimizationSpecification</span><span class="p">]</span>
+    <span class="n">keywords</span><span class="p">:</span> <span class="n">NEBKeywords</span></div>
+
+
+
+<span class="k">class</span> <span class="nc">NEBOptimization</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="k">class</span> <span class="nc">config</span><span class="p">:</span>
+        <span class="n">extra</span> <span class="o">=</span> <span class="n">Extra</span><span class="o">.</span><span class="n">forbid</span>
+
+    <span class="n">optimization_id</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">position</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">ts</span><span class="p">:</span> <span class="nb">bool</span>
+
+
+<span class="k">class</span> <span class="nc">NEBSinglepoint</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
+        <span class="n">extra</span> <span class="o">=</span> <span class="n">Extra</span><span class="o">.</span><span class="n">forbid</span>
+
+    <span class="n">singlepoint_id</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">chain_iteration</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">position</span><span class="p">:</span> <span class="nb">int</span>
+
+
+<span class="k">class</span> <span class="nc">NEBAddBody</span><span class="p">(</span><span class="n">RecordAddBodyBase</span><span class="p">):</span>
+    <span class="n">specification</span><span class="p">:</span> <span class="n">NEBSpecification</span>
+    <span class="n">initial_chains</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">Molecule</span><span class="p">]]]</span>
+
+
+<span class="k">class</span> <span class="nc">NEBQueryFilters</span><span class="p">(</span><span class="n">RecordQueryFilters</span><span class="p">):</span>
+    <span class="n">program</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="s2">&quot;geometric&quot;</span>
+    <span class="n">qc_program</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">constr</span><span class="p">(</span><span class="n">to_lower</span><span class="o">=</span><span class="kc">True</span><span class="p">)]]</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">qc_method</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">constr</span><span class="p">(</span><span class="n">to_lower</span><span class="o">=</span><span class="kc">True</span><span class="p">)]]</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">qc_basis</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Optional</span><span class="p">[</span><span class="n">constr</span><span class="p">(</span><span class="n">to_lower</span><span class="o">=</span><span class="kc">True</span><span class="p">)]]]</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">molecule_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="nd">@validator</span><span class="p">(</span><span class="s2">&quot;qc_basis&quot;</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">_convert_basis</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+        <span class="c1"># Convert empty string to None</span>
+        <span class="c1"># Lowercasing is handled by constr</span>
+        <span class="k">if</span> <span class="n">v</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">[</span><span class="s2">&quot;&quot;</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">v</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+
+<div class="viewcode-block" id="NEBRecord">
+<a class="viewcode-back" href="../../../user_guide/records/neb.html#qcportal.neb.NEBRecord">[docs]</a>
+<span class="k">class</span> <span class="nc">NEBRecord</span><span class="p">(</span><span class="n">BaseRecord</span><span class="p">):</span>
+    <span class="n">record_type</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;neb&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;neb&quot;</span>
+    <span class="n">specification</span><span class="p">:</span> <span class="n">NEBSpecification</span>
+
+    <span class="c1">######################################################</span>
+    <span class="c1"># Fields not always included when fetching the record</span>
+    <span class="c1">######################################################</span>
+    <span class="n">initial_chain_molecule_ids_</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">alias</span><span class="o">=</span><span class="s2">&quot;initial_chain_molecule_ids&quot;</span><span class="p">)</span>
+    <span class="n">singlepoints_</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">NEBSinglepoint</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">alias</span><span class="o">=</span><span class="s2">&quot;singlepoints&quot;</span><span class="p">)</span>
+    <span class="n">optimizations_</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">NEBOptimization</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">alias</span><span class="o">=</span><span class="s2">&quot;optimizations&quot;</span><span class="p">)</span>
+    <span class="n">neb_result_</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Molecule</span><span class="p">]</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">alias</span><span class="o">=</span><span class="s2">&quot;neb_result&quot;</span><span class="p">)</span>
+    <span class="n">initial_chain_</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Molecule</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">alias</span><span class="o">=</span><span class="s2">&quot;initial_chain&quot;</span><span class="p">)</span>
+
+    <span class="c1">########################################</span>
+    <span class="c1"># Caches</span>
+    <span class="c1">########################################</span>
+    <span class="n">_optimizations_cache</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">OptimizationRecord</span><span class="p">]]</span> <span class="o">=</span> <span class="n">PrivateAttr</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+    <span class="n">_singlepoints_cache</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">SinglepointRecord</span><span class="p">]]]</span> <span class="o">=</span> <span class="n">PrivateAttr</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+    <span class="n">_ts_hessian</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">SinglepointRecord</span><span class="p">]</span> <span class="o">=</span> <span class="n">PrivateAttr</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+
+<div class="viewcode-block" id="NEBRecord.propagate_client">
+<a class="viewcode-back" href="../../../user_guide/records/neb.html#qcportal.neb.NEBRecord.propagate_client">[docs]</a>
+    <span class="k">def</span> <span class="nf">propagate_client</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="p">):</span>
+        <span class="n">BaseRecord</span><span class="o">.</span><span class="n">propagate_client</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_optimizations_cache</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">opt</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_optimizations_cache</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                <span class="n">opt</span><span class="o">.</span><span class="n">propagate_client</span><span class="p">(</span><span class="n">client</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_singlepoints_cache</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">splist</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_singlepoints_cache</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                <span class="k">for</span> <span class="n">sp2</span> <span class="ow">in</span> <span class="n">splist</span><span class="p">:</span>
+                    <span class="n">sp2</span><span class="o">.</span><span class="n">propagate_client</span><span class="p">(</span><span class="n">client</span><span class="p">)</span></div>
+
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">_fetch_children_multi</span><span class="p">(</span>
+        <span class="bp">cls</span><span class="p">,</span> <span class="n">client</span><span class="p">,</span> <span class="n">record_cache</span><span class="p">,</span> <span class="n">records</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="n">NEBRecord</span><span class="p">],</span> <span class="n">include</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">force_fetch</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="p">):</span>
+        <span class="c1"># Should be checked by the calling function</span>
+        <span class="k">assert</span> <span class="n">records</span>
+        <span class="k">assert</span> <span class="nb">all</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">NEBRecord</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">records</span><span class="p">)</span>
+
+        <span class="n">do_sp</span> <span class="o">=</span> <span class="s2">&quot;singlepoints&quot;</span> <span class="ow">in</span> <span class="n">include</span> <span class="ow">or</span> <span class="s2">&quot;**&quot;</span> <span class="ow">in</span> <span class="n">include</span>
+        <span class="n">do_opt</span> <span class="o">=</span> <span class="s2">&quot;optimizations&quot;</span> <span class="ow">in</span> <span class="n">include</span> <span class="ow">or</span> <span class="s2">&quot;**&quot;</span> <span class="ow">in</span> <span class="n">include</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">do_sp</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">do_opt</span><span class="p">:</span>
+            <span class="k">return</span>
+
+        <span class="c1"># Collect optimization and singlepoint ids for all NEB</span>
+        <span class="n">opt_ids</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+        <span class="n">sp_ids</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+
+        <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">records</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">optimizations_</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">opt_ids</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">optimization_id</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">r</span><span class="o">.</span><span class="n">optimizations_</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+            <span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">singlepoints_</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">sp_ids</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">singlepoint_id</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">r</span><span class="o">.</span><span class="n">singlepoints_</span><span class="p">)</span>
+
+        <span class="n">sp_ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">sp_ids</span><span class="p">)</span>
+        <span class="n">opt_ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">opt_ids</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">do_sp</span><span class="p">:</span>
+            <span class="n">sp_records</span> <span class="o">=</span> <span class="n">get_records_with_cache</span><span class="p">(</span>
+                <span class="n">client</span><span class="p">,</span> <span class="n">record_cache</span><span class="p">,</span> <span class="n">SinglepointRecord</span><span class="p">,</span> <span class="n">sp_ids</span><span class="p">,</span> <span class="n">include</span><span class="o">=</span><span class="n">include</span><span class="p">,</span> <span class="n">force_fetch</span><span class="o">=</span><span class="n">force_fetch</span>
+            <span class="p">)</span>
+            <span class="n">sp_map</span> <span class="o">=</span> <span class="p">{</span><span class="n">r</span><span class="o">.</span><span class="n">id</span><span class="p">:</span> <span class="n">r</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">sp_records</span><span class="p">}</span>
+        <span class="k">if</span> <span class="n">do_opt</span><span class="p">:</span>
+            <span class="n">opt_records</span> <span class="o">=</span> <span class="n">get_records_with_cache</span><span class="p">(</span>
+                <span class="n">client</span><span class="p">,</span> <span class="n">record_cache</span><span class="p">,</span> <span class="n">OptimizationRecord</span><span class="p">,</span> <span class="n">opt_ids</span><span class="p">,</span> <span class="n">include</span><span class="o">=</span><span class="n">include</span><span class="p">,</span> <span class="n">force_fetch</span><span class="o">=</span><span class="n">force_fetch</span>
+            <span class="p">)</span>
+            <span class="n">opt_map</span> <span class="o">=</span> <span class="p">{</span><span class="n">r</span><span class="o">.</span><span class="n">id</span><span class="p">:</span> <span class="n">r</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">opt_records</span><span class="p">}</span>
+
+        <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">records</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">optimizations_</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">r</span><span class="o">.</span><span class="n">_optimizations_cache</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="k">elif</span> <span class="n">do_opt</span><span class="p">:</span>
+                <span class="n">r</span><span class="o">.</span><span class="n">_optimizations_cache</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+                <span class="k">for</span> <span class="n">opt_key</span><span class="p">,</span> <span class="n">opt_info</span> <span class="ow">in</span> <span class="n">r</span><span class="o">.</span><span class="n">optimizations_</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                    <span class="n">r</span><span class="o">.</span><span class="n">_optimizations_cache</span><span class="p">[</span><span class="n">opt_key</span><span class="p">]</span> <span class="o">=</span> <span class="n">opt_map</span><span class="p">[</span><span class="n">opt_info</span><span class="o">.</span><span class="n">optimization_id</span><span class="p">]</span>
+
+            <span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">singlepoints_</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">r</span><span class="o">.</span><span class="n">_singlepoints_cache</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="k">elif</span> <span class="n">do_sp</span><span class="p">:</span>
+                <span class="n">r</span><span class="o">.</span><span class="n">_singlepoints_cache</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+                <span class="k">for</span> <span class="n">sp_info</span> <span class="ow">in</span> <span class="n">r</span><span class="o">.</span><span class="n">singlepoints_</span><span class="p">:</span>
+                    <span class="n">r</span><span class="o">.</span><span class="n">_singlepoints_cache</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">sp_info</span><span class="o">.</span><span class="n">chain_iteration</span><span class="p">,</span> <span class="nb">list</span><span class="p">())</span>
+                    <span class="n">r</span><span class="o">.</span><span class="n">_singlepoints_cache</span><span class="p">[</span><span class="n">sp_info</span><span class="o">.</span><span class="n">chain_iteration</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sp_map</span><span class="p">[</span><span class="n">sp_info</span><span class="o">.</span><span class="n">singlepoint_id</span><span class="p">])</span>
+
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">_singlepoints_cache</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">_singlepoints_cache</span><span class="p">[</span><span class="nb">max</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">_singlepoints_cache</span><span class="p">)])</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                        <span class="n">_</span><span class="p">,</span> <span class="n">temp_list</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">_singlepoints_cache</span><span class="o">.</span><span class="n">popitem</span><span class="p">()</span>
+                        <span class="n">r</span><span class="o">.</span><span class="n">_ts_hessian</span> <span class="o">=</span> <span class="n">temp_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                        <span class="k">assert</span> <span class="n">r</span><span class="o">.</span><span class="n">_ts_hessian</span><span class="o">.</span><span class="n">specification</span><span class="o">.</span><span class="n">driver</span> <span class="o">==</span> <span class="s2">&quot;hessian&quot;</span>
+
+            <span class="n">r</span><span class="o">.</span><span class="n">propagate_client</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">_client</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_fetch_optimizations</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">optimizations_</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_assert_online</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">optimizations_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_client</span><span class="o">.</span><span class="n">make_request</span><span class="p">(</span>
+                <span class="s2">&quot;get&quot;</span><span class="p">,</span>
+                <span class="sa">f</span><span class="s2">&quot;api/v1/records/neb/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="si">}</span><span class="s2">/optimizations&quot;</span><span class="p">,</span>
+                <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">NEBOptimization</span><span class="p">],</span>
+            <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">fetch_children</span><span class="p">([</span><span class="s2">&quot;optimizations&quot;</span><span class="p">])</span>
+
+    <span class="k">def</span> <span class="nf">_fetch_singlepoints</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">singlepoints_</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_assert_online</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">singlepoints_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_client</span><span class="o">.</span><span class="n">make_request</span><span class="p">(</span>
+                <span class="s2">&quot;get&quot;</span><span class="p">,</span>
+                <span class="sa">f</span><span class="s2">&quot;api/v1/records/neb/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="si">}</span><span class="s2">/singlepoints&quot;</span><span class="p">,</span>
+                <span class="n">List</span><span class="p">[</span><span class="n">NEBSinglepoint</span><span class="p">],</span>
+            <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">fetch_children</span><span class="p">([</span><span class="s2">&quot;singlepoints&quot;</span><span class="p">])</span>
+
+    <span class="k">def</span> <span class="nf">_fetch_initial_chain</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">initial_chain_molecule_ids_</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_assert_online</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">initial_chain_molecule_ids_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_client</span><span class="o">.</span><span class="n">make_request</span><span class="p">(</span>
+                <span class="s2">&quot;get&quot;</span><span class="p">,</span>
+                <span class="sa">f</span><span class="s2">&quot;api/v1/records/neb/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="si">}</span><span class="s2">/initial_chain&quot;</span><span class="p">,</span>
+                <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
+            <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">initial_chain_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_client</span><span class="o">.</span><span class="n">get_molecules</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">initial_chain_molecule_ids_</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_fetch_neb_result</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">neb_result_</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_assert_online</span><span class="p">()</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">neb_result_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_client</span><span class="o">.</span><span class="n">make_request</span><span class="p">(</span>
+                <span class="s2">&quot;get&quot;</span><span class="p">,</span>
+                <span class="sa">f</span><span class="s2">&quot;api/v1/records/neb/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="si">}</span><span class="s2">/neb_result&quot;</span><span class="p">,</span>
+                <span class="n">Optional</span><span class="p">[</span><span class="n">Molecule</span><span class="p">],</span>
+            <span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">initial_chain</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Molecule</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">initial_chain_</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_fetch_initial_chain</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">initial_chain_</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">final_chain</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">SinglepointRecord</span><span class="p">]:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">singlepoints</span><span class="p">[</span><span class="nb">max</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">singlepoints</span><span class="o">.</span><span class="n">keys</span><span class="p">())]</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">singlepoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">SinglepointRecord</span><span class="p">]]:</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_singlepoints_cache</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_fetch_singlepoints</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_singlepoints_cache</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">result</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">neb_result_</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="s2">&quot;neb_result_&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">__fields_set__</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_fetch_neb_result</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">neb_result_</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">optimizations</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">OptimizationRecord</span><span class="p">]]:</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_optimizations_cache</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_fetch_optimizations</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_optimizations_cache</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ts_optimization</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">OptimizationRecord</span><span class="p">]:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">optimizations</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;transition&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ts_hessian</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">SinglepointRecord</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_singlepoints_cache</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_fetch_singlepoints</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ts_hessian</span></div>
+
+</pre></div>
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+<div class="row h-10">
+    <div class="col-2">
+        <a href="https://molssi.org/" target="_blank" title="Go to MolSSI in a new tab">
+            <img src="../../../_static/molssi_main_logo.png" class="logo__image only-light footer_logo" alt="Logo image">
+            <img src="../../../_static/molssi_main_logo_inverted_white.png" class="logo__image only-dark footer_logo" alt="Logo image">
+        </a>
+    </div>
+    <div class="col-8">
+        <p> &copy; Copyright 2019-2023 <a href="https://molssi.org/">The Molecular Sciences Software Institute</a></p>
+        <p>Funded by the National Science Foundation 
+          <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1547580">OAC-1547580</a> and 
+          <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2136142">CHE-2136142.</a></p>
+ 
+        
+        <p class="sphinx-version">
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.3.7.<br>
+        </p>
+        
+
+        <p class="theme-version">
+        Built with a customized <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.2.
+        </p>
+
+    </div>
+    <div class="col-2">
+        <a href="https://nsf.gov/" target="_blank" title="Go to the NSF in a new tab">
+            <img src="../../../_static/nsf.png" class="footer_logo" alt="The NSF">
+          </a>
+    </div>
+</div></div>
+      
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+  </body>
+</html>
